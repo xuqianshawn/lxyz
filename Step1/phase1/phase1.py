@@ -19,7 +19,7 @@ def loopThroughAppInConfig(appName):
             currentAppname = config["name"]
             if currentAppname == appName:
              output_file = "../results/" + config["name"] + ".json"
-             remove_files(output_file)
+             removeFromLocal(output_file)
              TestSpider.name=currentAppname
              process.crawl(TestSpider,
                           start_url=config["start_url"],
@@ -34,21 +34,21 @@ def loopThroughAppInConfig(appName):
              print('start crawling for' + config["name"] + ' ' + config["start_url"])
              process.start()
              print "-----------crawling finished------------"
-             reformat_output()
+             AvoidDuplicateEntry()
              print "-----------reformat finished------------"
-             write_to_file(output_file)
+             writeToLocal(output_file)
 
 
 
 
-def write_to_file(output_file):
+def writeToLocal(output_file):
     print "-----------total number of links------------"
     print len(output_urls)
     phase1_file = open(output_file, 'w')
     output = {"urls": output_urls}
     phase1_file.write(json.dumps(output))
 
-def remove_files(file):
+def removeFromLocal(file):
 
     try:
         os.remove('tempitems.json')
@@ -57,7 +57,7 @@ def remove_files(file):
     except OSError:
         pass
 
-def reformat_output():
+def AvoidDuplicateEntry():
     with open("tempitems.json") as my_file:
         urls = json.load(my_file)
         for item in urls:

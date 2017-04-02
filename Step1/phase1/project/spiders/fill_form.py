@@ -20,7 +20,7 @@ def _retrieve_form_element(form, origin_url):
     return {"fields": fields, "url": url}
 
 
-def fetch_form(url, body):
+def fetchForm(url, body):
     doc = html.document_fromstring(body, base_url=url)
     form_items = []
     for form in doc.xpath('//form'):
