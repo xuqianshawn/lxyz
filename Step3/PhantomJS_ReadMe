@@ -1,3 +1,3 @@
 1. install node.js
 2. npm install -g phantomjs-prebuilt
-3. phantomjs test.js
+3. phantomjs --ignore-ssl-errors=true test.js
