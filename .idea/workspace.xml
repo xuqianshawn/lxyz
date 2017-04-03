@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc60278a-b720-48e9-a03b-25716ff18a9e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Step3/PhantomJS_ReadMe" afterPath="$PROJECT_DIR$/Step3/PhantomJS_ReadMe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,17 +38,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Step3/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="494">
+              <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhantomJS_ReadMe" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PhantomJS_ReadMe" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Step3/PhantomJS_ReadMe">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -126,10 +126,10 @@
       <list>
         <option value="$PROJECT_DIR$/Step1/phase1/phase1.py" />
         <option value="$PROJECT_DIR$/Step3/testAttackSuccess.py" />
-        <option value="$PROJECT_DIR$/Step3/test.js" />
         <option value="$PROJECT_DIR$/Step3/test3.js" />
         <option value="$PROJECT_DIR$/Step3/test2.js" />
         <option value="$PROJECT_DIR$/Step3/PhantomJS_ReadMe" />
+        <option value="$PROJECT_DIR$/Step3/test.js" />
       </list>
     </option>
   </component>
@@ -428,6 +428,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Step3/PhantomJS_ReadMe">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Step3/testAttackSuccess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -440,16 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Step3/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Step3/PhantomJS_ReadMe">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        <state relative-caret-position="494">
+          <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
           <folding />
         </state>
       </provider>
