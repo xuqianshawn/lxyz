@@ -4,10 +4,12 @@ import urlparse
 from project.items import ProjectItem
 from scrapy.http import Request
 from scrapy.spiders.init import InitSpider
-import fill_form
-from find_login_form import getFormData
 
-class TestSpider(InitSpider): 
+from find_login_form import getFormData
+from lxml import html
+
+
+class TestSpider(InitSpider):
     name = "test"
     login_required = False
 
@@ -36,7 +38,8 @@ class TestSpider(InitSpider):
         return self.initialized()
 
     def login(self, response):
-        form_data, action = getFormData(response.body, response.url, self.username_field, self.password_field, self.username, self.password)
+        form_data, action = getFormData(response.body, response.url, self.username_field, self.password_field,
+                                        self.username, self.password)
         self.login_item = self.generateLoginItem(form_data, action)
 
         return scrapy.FormRequest(action,
@@ -48,21 +51,26 @@ class TestSpider(InitSpider):
             self.log("Successful log in")
 
             self.login_required = True
+            # print 'success login'
             return self.initialized()
+        elif "new user" in response.content.lower():
+            self.log("Successful log in")
+            # print 'app5 success'
+            self.login_required = True
         else:
+            # print 'failed'
             self.log("Failed")
-
 
     def parse(self, response):
         if self.login_item:
             yield self.login_item
 
-        post_forms = fill_form.fetchForm(response.url, response.body)
+        post_forms = self.fetchForm(response.url, response.body)
         for post_form in post_forms:
+            # self.log(post_form)
             ItemPost = self.generatePostItem(post_form)
             if ItemPost is not None:
                 yield ItemPost
-
 
         yield self.generateTempitemForGet(response)
 
@@ -107,7 +115,6 @@ class TestSpider(InitSpider):
         }
         return item
 
-
     def generateTempitemForGetNoResp(self, response_url):
         parsed = urlparse.urlparse(response_url)
         parameters = urlparse.parse_qs(parsed.query)
@@ -130,6 +137,7 @@ class TestSpider(InitSpider):
 
         item["headers"] = {}
         return item
+
     def generateLoginItem(self, form_data, action):
         self.login_url = action
         ItemPost = ProjectItem()
@@ -149,7 +157,12 @@ class TestSpider(InitSpider):
         ItemPost = ProjectItem()
         ItemPost["url"] = post_form["url"]
         ItemPost["param"] = post_form["fields"]
-        ItemPost["type"] = "POST"
+        self.log(55555555555555555555555555555555555555555)
+        self.log(post_form["isGet"])
+        if (post_form["isGet"]):
+            ItemPost["type"] = "GET"
+        else:
+            ItemPost["type"] = "POST"
         if self.login_required:
             ItemPost["loginrequired"] = "true"
             ItemPost["loginurl"] = self.login_url
@@ -160,5 +173,38 @@ class TestSpider(InitSpider):
         if bool(ItemPost["param"]):
             return ItemPost
         return None
+
+    def RetrieveInputs(self, form, origin_url, isGet):
+        fields = {}
+        for x in form.inputs:
+            if x.value is None:
+                if type(x) == html.SelectElement:
+                    x.value = x.value_options[0]
+                else:
+                    x.value = "None"
+            if type(x) == html.TextareaElement:
+                fields[x.name] = [""]
+            elif x.name and ("type" in x.keys() and x.type != "submit") and not ("Fatal error" in x.value):
+                fields[x.name] = [x.value]
+
+        url = form.action
+        if (url is None) or (url is ""):
+            url = origin_url
+
+        return {"fields": fields, "url": url, "isGet": isGet}
+
+    def fetchForm(self, url, body):
+
+        doc = html.document_fromstring(body, base_url=url)
+        form_items = []
+        self.log(len(doc.xpath('//form')))
+        for form in doc.xpath('//form'):
+
+            isGet = False
+            if str(form.xpath('.//@method')).lower().find("get") > 0:
+                isGet = True
+
+            form_items.append(self.RetrieveInputs(form, url, isGet))
+        return form_items
 
 
