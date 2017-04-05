@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html  class = "popup"  >
+<head>
+    <base href = "https://app5.com/www/">
+    <meta http-equiv = "Content-Language" content = "en">
+    <meta http-equiv = "keywords" content = "education">
+    <meta http-equiv = "description" content = "Collaborative Elearning Platform">
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+    <link rel="shortcut icon" href="themes/default/images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href = "themes/modern/css/css_global.css?build=10653">
+        <link rel = "stylesheet" type = "text/css" href = "modules/module_chat/css/screen.css?build=10653" />         <title>eFront | Refreshing eLearning</title>
+
+    
+    <script type = "text/javascript">
+        var ajaxObjects = new Array();
+                  top.document.title = "eFront | How to be a programmer - Beginner";
+        if (window.name == 'POPUP_FRAME') var popup=1;
+        var globalImageExtension = 'png';
+                var usingHorizontalInterface = true;
+        
+        var sessionLogin = "student";
+        var translationsToJS = new Array();
+    </script>
+
+
+<script>var translations = new Array(); /*used for passing language tags to js*/</script>
+
+</head>
+<body id = "body_content" onkeypress = "if (window.eF_js_keypress) eF_js_keypress(event);" onbeforeunload = "if (window.getPeriodicData) getPeriodicData();">
+                 
+ 
+    
+  
+  
+  
+  
+      
+  <script>
+   var show_left_bar = '0';
+  </script>
+
+  
+ <div id = "bookmarks_div_code" style = "display:none">
+    <div class = "block" style = ";" id = "Show+bookmarks" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'e87b5141c928fe915226e64b1bf07d4b')"  id = "Show+bookmarks_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Show bookmarks</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Show+bookmarks_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <div id = "bookmarks_div"></div>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<script>
+function changeItemColor(item, color) {
+//alert(document.getElementById(item).style.backgroundColor + ' ' +color);
+   document.getElementById(item).style.backgroundColor = color;
+}
+</script>
+ <table class = "centerTable">   <tr><td class = "moduleCell" style = "height:100%">
+                     <script>
+    var nextUnit = '36';var previousUnit = '34';var noBeforeUnload = false;    translations['_YOUAREATTHELASTLESSONYOUMAYVISIT'] = 'You are at the last lesson you may visit';
+    </script>   <table class = "contentArea">
+    <tr>
+     <td id = "centerColumn">
+                          <p style = "text-align:center"><input class = "flatButton" type = "submit" onClick = "window.print()" value = "Print it!"/></p>
+                  
+    <div class = "block" style = ";" id = "5.+How+to+Understand+Performance+Problems" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'b0aae646cec6b291d49cdc285804bed1')"  id = "5.+How+to+Understand+Performance+Problems_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">5. How to Understand Performance Problems</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "5.+How+to+Understand+Performance+Problems_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     
+	
+		
+			
+			How to Understand Performance Problems
+			Learning to understand the performance of a running system is unavoidable for the same reason
+			that learning debugging is. Even if you understand perfectly and precisely the cost of the code you
+			write, your code will make calls into other software systems that you have little control over or
+			visibility into. However, in practice performance problems are a little different and a little easier
+			than debugging in general.<br />
+			<br />
+			Suppose that you or your customers consider a system or a subsystem to be too slow. Before you
+			try to make it faster, you must build a mental model of why it is slow. To do this you can use a
+			profiling tool or a good log to figure out where the time or other resources are really being spent.
+			There is a famous dictum that 90% of the time will be spent in 10% of the code. I would add to
+			that the importance of input/output expense (I/O) to performance issues. Often most of the time is
+			spent in I/O in one way or another. Finding the expensive I/O and the expensive 10% of the code
+			is a good first step to building your mental model.<br />
+			<br />
+			There are many dimensions to the performance of a computer system, and many resources consumed.
+			The first resource to measure is wall--clock time, the total time that passes for the computation.
+			Logging wall-clock time is particularly valuable because it can inform about unpredictable
+			circumstance that arise in situations where other profiling is impractical. However, this may not
+			always represent the whole picture. Sometimes something that takes a little longer but doesn&#39;t burn
+			up so many processor seconds will be much better in computing environment you actually have to
+			deal with. Similarly, memory, network bandwidth, database or other server accesses may, in the
+			end, be far more expensive than processor seconds.<br />
+			<br />
+			Contention for shared resources that are synchronized can cause deadlock and starvation. Deadlock
+			is the inability to proceed because of improper synchronization or resource demands. Starvation
+			is the failure to schedule a component properly. If it can be at all anticipated, it is best to have
+			a way of measuring this contention from the start of your project. Even if this contention does not
+			occur, it is very helpful to be able to assert that with confidence.
+			
+		
+	
+
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+                   </td>
+     </tr>
+   </table>
+  </table>
+
+
+<script>
+
+var currentUnit = document.getElementById('node35');  var g_servername = 'https://app5.com/www/';
+</script>
+<script>var BOOKMARKTRANSLATION = 'Bookmarks';var NODATAFOUND = 'No data found';</script>
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=../modules/module_chat/js/jquery,../modules/module_chat/js/chat,EfrontScripts,scriptaculous/prototype,scriptaculous/scriptaculous,scriptaculous/effects,prototip/prototip,efront_ajax,includes/events"> </script> 
+
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=includes/content,includes/comments,scriptaculous/controls"> </script>
+<script type = "text/javascript" src = "modules/module_rss/rss_reader.js"> </script> 
+<div id = "user_table" style = "display:none">
+
+    <div class = "block" style = ";" id = "Information" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '1d0e31a371e0cde201023bcfbff53a8d')"  id = "Information_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table width = "100%">
+        <tr><td align = "left" id = "user_box" style = "padding:3px 3px 4px 5px;"></td></tr>
+    </table>
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<table id = "popup_table" class = "divPopup" style = "display:none;">
+    <tr class = "defaultRowHeight">
+        <td class = "topTitle" id = "popup_title"></td>
+        <td class = "topTitle" id = "popup_close_cell"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-close' alt = "Close" name = "" id = "popup_close" title = "Close" onclick = "if (document.getElementById('reloadHidden') && document.getElementById('reloadHidden').value == '1')  {parent.frames[1].location = parent.frames[1].location};eF_js_showDivPopup('', '', this.name);"/>
+    </td></tr>
+    <tr><td colspan = "2" id = "popup_data" style = ""></td></tr>
+    <tr><td colspan = "2" id = "frame_data" style = "display:none;">
+   <iframe name = "POPUP_FRAME" id = "popup_frame" src = "about:blank" >Sorry, but your browser needs to support iframes to see this</iframe>
+    </td></tr>
+</table>
+<div id = "error_details" style = "display:none">
+    <div class = "block" style = ";" id = "Error+Details" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '4abd267c1672e34c7bc89e2b7178c161')"  id = "Error+Details_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Error Details</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Error+Details_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <pre></pre>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<div id = 'showMessageDiv' style = "display:none"></div>
+<div id="dimmer" class = "dimmerDiv" style = "display:none;"></div>
+<div id = "defaultExceptionHandlerDiv" style = "color:#ffffff;display:none"></div>
+
+ 
+
+
+<script>
+
+
+if (parent.frames[0].document.getElementById('dimmer'))
+ parent.frames[0].document.getElementById('dimmer').style.display = 'none'
+
+if (top.sideframe && top.sideframe.document && top.sideframe.document.getElementById('loading_sidebar'))
+    top.sideframe.document.getElementById('loading_sidebar').style.display = 'none'; //no prototype here please
+
+    var __shouldTriggerNextNotifications = true;
+
+
+
+
+
+
+
+if (!usingHorizontalInterface) {
+ if (top.sideframe && top.sideframe.document.getElementById('current_location')) {
+  top.sideframe.document.getElementById('current_location').value = top.mainframe.location.toString();
+ }
+} else {
+ if ($('current_location')) {
+  $('current_location').value = document.location.toString();
+ }
+}
+
+
+
+ translations['_COUPON'] = 'Coupon';
+ translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';
+      redirectLocation ='/www/student.php?ctg=lessons&catalog=1&checkout=1';
+   
+</script><script>
+     var ctg = '';
+</script>
+</body>
+</html><script>if (__shouldTriggerNextNotifications) { new Ajax.Request("send_notifications.php?ajax=1", {method:'get', asynchronous:true}); } </script>

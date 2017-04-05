@@ -7,7 +7,7 @@ import logging
 from copy import deepcopy
 import glob
 
-def combine(payload_file_name, url_file_name, user_name, password, step1_folder_name = './step1results/'):
+def combine(payload_file_name, url_file_name, user_name, password, step1_folder_name = '../Step1/results/'):
     try:
         step2_folder_name = './step2results/'
         results = []
@@ -62,7 +62,7 @@ def combine(payload_file_name, url_file_name, user_name, password, step1_folder_
 
 
 # 'xss_payloads_6-20-12_text_cases.txt'
-def step2(payloadfolder_name, step1_folder_name='./step1results/'):
+def step2(payloadfolder_name, step1_folder_name='../Step1/results/'):
     step1_result_file_names = glob.glob(step1_folder_name+'*.json')
     for file_name in step1_result_file_names:
         combine(payloadfolder_name, os.path.basename(file_name), 'username', 'password', step1_folder_name)

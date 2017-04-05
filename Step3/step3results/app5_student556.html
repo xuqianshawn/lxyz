@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html  class = "popup"  >
+<head>
+    <base href = "https://app5.com/www/">
+    <meta http-equiv = "Content-Language" content = "en">
+    <meta http-equiv = "keywords" content = "education">
+    <meta http-equiv = "description" content = "Collaborative Elearning Platform">
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+    <link rel="shortcut icon" href="themes/default/images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href = "themes/modern/css/css_global.css?build=10653">
+        <link rel = "stylesheet" type = "text/css" href = "modules/module_chat/css/screen.css?build=10653" />         <title>eFront | Refreshing eLearning</title>
+
+    
+    <script type = "text/javascript">
+        var ajaxObjects = new Array();
+                  top.document.title = "eFront | Greedy algorithms";
+        if (window.name == 'POPUP_FRAME') var popup=1;
+        var globalImageExtension = 'png';
+                var usingHorizontalInterface = true;
+        
+        var sessionLogin = "student";
+        var translationsToJS = new Array();
+    </script>
+
+
+<script>var translations = new Array(); /*used for passing language tags to js*/</script>
+
+</head>
+<body id = "body_content" onkeypress = "if (window.eF_js_keypress) eF_js_keypress(event);" onbeforeunload = "if (window.getPeriodicData) getPeriodicData();">
+                 
+ 
+    
+  
+  
+  
+  
+      
+  <script>
+   var show_left_bar = '0';
+  </script>
+
+  
+ <div id = "bookmarks_div_code" style = "display:none">
+    <div class = "block" style = ";" id = "Show+bookmarks" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '8844f065ddd25da7e1948c35eed9facd')"  id = "Show+bookmarks_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Show bookmarks</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Show+bookmarks_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <div id = "bookmarks_div"></div>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<script>
+function changeItemColor(item, color) {
+//alert(document.getElementById(item).style.backgroundColor + ' ' +color);
+   document.getElementById(item).style.backgroundColor = color;
+}
+</script>
+ <table class = "centerTable">   <tr><td class = "moduleCell" style = "height:100%">
+                     <script>
+    var nextUnit = '2';var previousUnit = '1';var noBeforeUnload = false;    translations['_YOUAREATTHELASTLESSONYOUMAYVISIT'] = 'You are at the last lesson you may visit';
+    </script>   <table class = "contentArea">
+    <tr>
+     <td id = "centerColumn">
+                          <p style = "text-align:center"><input class = "flatButton" type = "submit" onClick = "window.print()" value = "Print it!"/></p>
+                  
+    <div class = "block" style = ";" id = "Backtracking" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '7130efae5fc07a804a8e47f1d135b4ce')"  id = "Backtracking_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Backtracking</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Backtracking_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     
+	
+		
+			
+			Backtracking
+			The backtracking method is based on the systematically inquisition of the possible solutions where through the procedure, set of possible solutions are rejected before even examined so their number is getting a lot smaller.<br />
+			<br />
+			An important requirement which must be fulfilled is that there must be the proper hierarchy in the systematically produce of solutions so that sets of solutions that do not fulfill a certain requirement are rejected before the solutions are produced. For this reason the examination and produce of the solutions follows a model of non-cycle graph for which in this case we will consider as a tree. The root of the tree represents the set of all the solutions. Nodes in lower levels represent even smaller sets of solutions, based on their properties. Obviously, leaves will be isolated solutions. It is easily understood that the tree (or any other graph) is produced during the examination of the solutions so that no rejected solutions are produced. When a node is rejected, the whole sub-tree is rejected, and we backtrack to the ancestor of the node so that more children are produced and examined. Because this method is expected to produce subsets of solutions which are difficult to process, the method itself is not very popular.
+			<br />
+			<br />
+			THE QUEENS PROBLEM
+			We consider a grid of squares, dimensioned nXn, partly equivalent to a chessboard containing n2 places. A queen placed in any of the n2 squares controls all the squares that are on its row, its column and the 450 diagonals. The problem asked, is how to put n queens on the chessboard, so that the square of every queen is not controlled by any other queen. Obviously for n=2 there is no problem to the solution, while for n=4 a valid solution is given by the drawing below. <br />
+			<br />
+			<img src="content/lessons/1/kef5_81.jpg" border="0" hspace="0" align="middle" /><br />
+			<br />
+			A possible position on the grid is set by the pair of pointers (i,j) where 1(1),...V(n)]. All the solutions for which V(i)=V(j) are rejected because 2 queens can not be on the same row.Now the solutions are the permutes of n pointers, which is n!, still a forbiddingly big number. Out of all these solution the correct one is the one which satisfies the last requirement: 2 queens will not belong in the same diagonal, which is:<br />
+			<br />
+			V(j)-V(i)&lt;&gt;Â±(i-j) for i&lt;&gt;j. (5.8-1)<br />
+			<br />
+			A backtracking algorithm or this problem constructs the permutes [V(1),....V(n)] of the {1,...,n} pointers, and examines them as to the property (5.8-1). For example there are (n-2)! permutes in the shape of [3,4....]. These will not be produced and examined if the systematically construction of them has already ordered them in a sub-tree with root [3,4] which will be rejected by the 5.8-1 condition, and will also reject all the (n-2)! permutes. On the contrary, the same way of producing-examining will go even further to the examination of more permutes in the shape of p={1,4,2,...} since, so far the condition is satisfied. The next node to be inserted that is j:=V(4) must also satisfies these:j-1&lt;&gt;3,j-4&lt;&gt;2,j-4&lt;&gt;-2,j-2&lt;&gt;1,j-2&lt;&gt;-1. All the j pointers satisfying these requirements produce the following permutes: [1,4,2,j,...] which connect to the tree as children of p. Meanwhile large sets of permutes such as [1,4,2,6,...] have already been rejected.<br />
+			<br />
+			A typical declaration of this algorithm: The root of all solutions,has as children n nodes [1],...,[n],where [j] represents all the permutes starting with j(and whose number is (n-1)! for every j). Inductive if a node includes the k nodes {j1,...jk} we attempt to increase it with another node { j1,...,jk,jk+1} so that the condition (5.8-1) is fulfilled.<br />
+			<br />
+			For n=4 this method produces the indirect graph of the following picture, and does not produce the 4!=24 leaves of all the candidate solutions.<br />
+			<br />
+			<img src="content/lessons/1/kef5_82.jpg" border="0" hspace="0" align="bottom" /><br />
+			<br />
+			
+			Solution to the queens problem using Backtracking (n=4)
+			<p align="center">
+			&nbsp;
+			</p>
+			
+				
+					
+						<br />
+						<applet codebase="content/lessons/1/java/queens" code="queens.class" width="450" height="355"/></applet>
+						
+					
+				
+			
+			
+		
+	
+
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+                   </td>
+     </tr>
+   </table>
+  </table>
+
+
+<script>
+
+var currentUnit = document.getElementById('node5');  var g_servername = 'https://app5.com/www/';
+</script>
+<script>var BOOKMARKTRANSLATION = 'Bookmarks';var NODATAFOUND = 'No data found';</script>
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=../modules/module_chat/js/jquery,../modules/module_chat/js/chat,EfrontScripts,scriptaculous/prototype,scriptaculous/scriptaculous,scriptaculous/effects,prototip/prototip,efront_ajax,includes/events"> </script> 
+
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=includes/content,includes/comments,scriptaculous/controls"> </script>
+<script type = "text/javascript" src = "modules/module_rss/rss_reader.js"> </script> 
+<div id = "user_table" style = "display:none">
+
+    <div class = "block" style = ";" id = "Information" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '22a81f5ef69172a27942de91628974da')"  id = "Information_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table width = "100%">
+        <tr><td align = "left" id = "user_box" style = "padding:3px 3px 4px 5px;"></td></tr>
+    </table>
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<table id = "popup_table" class = "divPopup" style = "display:none;">
+    <tr class = "defaultRowHeight">
+        <td class = "topTitle" id = "popup_title"></td>
+        <td class = "topTitle" id = "popup_close_cell"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-close' alt = "Close" name = "" id = "popup_close" title = "Close" onclick = "if (document.getElementById('reloadHidden') && document.getElementById('reloadHidden').value == '1')  {parent.frames[1].location = parent.frames[1].location};eF_js_showDivPopup('', '', this.name);"/>
+    </td></tr>
+    <tr><td colspan = "2" id = "popup_data" style = ""></td></tr>
+    <tr><td colspan = "2" id = "frame_data" style = "display:none;">
+   <iframe name = "POPUP_FRAME" id = "popup_frame" src = "about:blank" >Sorry, but your browser needs to support iframes to see this</iframe>
+    </td></tr>
+</table>
+<div id = "error_details" style = "display:none">
+    <div class = "block" style = ";" id = "Error+Details" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '0d3ad272093eae7179d11839eecef6ae')"  id = "Error+Details_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Error Details</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Error+Details_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <pre></pre>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<div id = 'showMessageDiv' style = "display:none"></div>
+<div id="dimmer" class = "dimmerDiv" style = "display:none;"></div>
+<div id = "defaultExceptionHandlerDiv" style = "color:#ffffff;display:none"></div>
+
+ 
+
+
+<script>
+
+
+if (parent.frames[0].document.getElementById('dimmer'))
+ parent.frames[0].document.getElementById('dimmer').style.display = 'none'
+
+if (top.sideframe && top.sideframe.document && top.sideframe.document.getElementById('loading_sidebar'))
+    top.sideframe.document.getElementById('loading_sidebar').style.display = 'none'; //no prototype here please
+
+    var __shouldTriggerNextNotifications = false;
+
+
+
+
+
+
+
+if (!usingHorizontalInterface) {
+ if (top.sideframe && top.sideframe.document.getElementById('current_location')) {
+  top.sideframe.document.getElementById('current_location').value = top.mainframe.location.toString();
+ }
+} else {
+ if ($('current_location')) {
+  $('current_location').value = document.location.toString();
+ }
+}
+
+
+
+ translations['_COUPON'] = 'Coupon';
+ translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';
+      redirectLocation ='/www/student.php?ctg=lessons&catalog=1&checkout=1';
+   
+</script><script>
+     var ctg = '';
+</script>
+</body>
+</html><script>if (__shouldTriggerNextNotifications) { new Ajax.Request("send_notifications.php?ajax=1", {method:'get', asynchronous:true}); } </script>

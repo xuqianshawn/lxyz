@@ -1,0 +1,489 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html    >
+<head>
+    <base href = "https://app5.com/www/">
+    <meta http-equiv = "Content-Language" content = "en">
+    <meta http-equiv = "keywords" content = "education">
+    <meta http-equiv = "description" content = "Collaborative Elearning Platform">
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+    <link rel="shortcut icon" href="themes/default/images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href = "themes/modern/css/css_global.css?build=10653">
+        <link rel = "stylesheet" type = "text/css" href = "modules/module_chat/css/screen.css?build=10653" />         <title>eFront | Refreshing eLearning</title>
+
+    
+    <script type = "text/javascript">
+        var ajaxObjects = new Array();
+                  top.document.title = "eFront | Refreshing eLearning";
+        if (window.name == 'POPUP_FRAME') var popup=1;
+        var globalImageExtension = 'png';
+                var usingHorizontalInterface = true;
+        
+        var sessionLogin = "student";
+        var translationsToJS = new Array();
+    </script>
+
+
+<script>var translations = new Array(); /*used for passing language tags to js*/</script>
+
+</head>
+<body id = "body_lessons" onkeypress = "if (window.eF_js_keypress) eF_js_keypress(event);" onbeforeunload = "if (window.getPeriodicData) getPeriodicData();">
+   
+<script>
+translations['_YOUHAVEBEENSUCCESSFULLYADDEDTOTHEGROUP'] = 'You have been successfully added to the group';
+</script>
+
+
+ <div id = "bookmarks_div_code" style = "display:none">
+    <div class = "block" style = ";" id = "Show+bookmarks" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '6c59f16fee21390ddba7b8844922df79')"  id = "Show+bookmarks_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Show bookmarks</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Show+bookmarks_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <div id = "bookmarks_div"></div>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<script>
+function changeItemColor(item, color) {
+//alert(document.getElementById(item).style.backgroundColor + ' ' +color);
+   document.getElementById(item).style.backgroundColor = color;
+}
+</script>
+ <table class = "pageLayout hideLeft" id = "pageLayout">
+  <tr><td style = "vertical-align:top">
+   <table style = "width:100%;">
+       <tr><td id ="horizontalBarRow" class = "header" colspan = "3"> <div id = "logo">
+  <a href = "/www/student.php">
+   <img  class = 'handle' src = "themes/modern/images/logo/logo.png" title = "eFront" alt = "eFront" />
+  </a>
+ </div>
+  <script>
+  var startUpdater = true;
+  var updaterPeriod = '100000';
+ </script>
+ <div id = "logout_link" >
+         <span class = "headerText" >
+    Connected:&nbsp;(<a href = "javascript:void(0)" class = "info"><span id = "header_connected_users">1</span><span class = "tooltipSpan">Student D. (student)</span></a>)
+    </span>
+          <a href = "userpage.php?ctg=personal&user=student" class="headerText" id = "personal_options_link">
+     Student D. (student)
+    </a>
+    <div style = "display:none" id = "my_personal_options">
+     <ul style = "list-style:none;padding:0px;" class = "headerMenu">
+           <li onclick = "location='/www/student.php?ctg=personal&user=student&op=dashboard'">Dashboard</li>
+           <li onclick = "location='/www/student.php?ctg=personal&user=student&op=profile'">Account</li>
+           <li onclick = "location='/www/student.php?ctg=personal&user=student&op=user_courses'">Learning</li>
+     
+
+
+
+     </ul>
+    </div>
+       <span class = "headerText">
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-mail' alt = " Messages" title = " Messages" onclick = "location='userpage.php?ctg=messages'"/>
+     <span id = "header_total_messages"></span>
+    </span>
+          <span class = "headerText"></span>
+    <select class = "inputSelectMed" onchange = "if (this.value) changeAccount(this.value)" >
+     <option value="">[Switch account]</option>
+          <option value="admin">Administrator S. (admin)</option>
+                      <option value="professor">Professor D. (professor)</option>
+                              </select>
+                  <a class = "headerText" href = "index.php?logout=true">Logout</a>
+     </div>
+   <div id = "path">
+  <div id = "path_title"><a class = "titleLink" title = "Home" href ="/www/student.php?ctg=control_panel">Home</a></div>
+  <div id = "tab_handles_div"></div>
+  <div id = "path_language">
+              <form action = "/www/student.php?ctg=lessons&op=search" method = "post">
+    <input type = "text" name = "search_text" value = "Search" onclick="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';" class = "searchBox" style = "background-image:url('themes/default/images/16x16/search.png');"/>
+    <input type = "hidden" name = "current_location" id = "current_location" />
+   </form>
+    </div>
+ </div></td></tr>
+      <tr><td class = "layoutColumn left">
+         </td>
+    <td class = "layoutColumn center">
+     <table class = "centerTable"> <tr><td class = "moduleCell">
+        <div id = 'group_key_enter' style = "display:none;">
+     
+    <div class = "block" style = ";" id = "Group%2FLesson+key" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '214703a26a00917bd6e7db67ca8023ac')"  id = "Group%2FLesson+key_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Group/Lesson key</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Group%2FLesson+key_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table>
+           <tr><td colspan = "2">&nbsp;</td></tr>
+           <tr><td class = "labelCell">Unique group key:&nbsp;</td>
+               <td class = "elementCell"><input class = "inputText" type = "text" id = "group_key" /></td></tr>
+           <tr><td colspan = "2">&nbsp;</td></tr>
+           <tr><td></td>
+            <td class = "submitCell"><input class = "flatButton" type = "button" onclick = "addGroupKey(this)" value="Submit" /></td></tr>
+           <tr><td colspan = "2"><span id = "resultReport"></span><img id = "progressImg" src = "themes/default/images/others/progress_big.gif" style = "display:none"/></td></tr>
+           <tr><td colspan = "2">&nbsp;</td></tr>
+           <tr><td colspan = "2" class = "horizontalSeparatorAbove">By submitting here a unique group key provided to you by the system administrator you are able to register yourself to all lessons of that particular group</td></tr>
+       </table>
+   
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+   </div>
+
+
+       
+               
+                           
+    <div class = "block" style = ";" id = "my+Courses" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '45188e2eb20a977ef0a487fbe46ea3d0')"  id = "my+Courses_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">my Courses</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "my+Courses_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+          
+        
+    <div style = "padding-top:12px;padding-bottom:12px">
+     
+     <a href = "javascript:void(0)" onclick = "showAll()" id = "catalog_show_all" style = "display:none">Expand all</a>
+     <a href = "javascript:void(0)" onclick = "hideAll()" id = "catalog_hide_all" >Collapse all</a>
+     | <select onchange = "setCookie('display_all_courses', this.options[this.options.selectedIndex].value);location=location">
+      <option value = "0">Material in progress</option>
+      <option value = "1" selected>All material</option>
+     </select>
+    </div>
+      <div id = "directions_tree">
+     <table class = "directionsTable" id = "direction_1" >
+      <tr class = "lessonsList">
+       <td class = "listPadding" style = "width:1px"><div style = "width:0px;">&nbsp;</div></td>
+       <td class = "listToggle"><img id = "subtree_img1"    src = 'themes/default/images/others/transparent.gif'  class = 'visible sprite16 sprite16-navigate_up' alt = "Click to toggle" title = "Click to toggle" onclick = "Element.extend(this);showHideDirections(this, '', '1', (this.hasClassName('visible')) ? 'hide' : 'show');"></td>
+       <td>
+        <img src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-categories' >
+        <span style = "display:none" id = "subtree_children_1"></span>
+       <span class = "listName">Ancient Civilizations</span></td>
+      </tr>
+      <tr id = "subtree1" name = "default_visible" > <td></td>
+       <td class = "lessonsList_nocolor">&nbsp;</td>
+       <td colspan = "2">
+        <table width = "100%"><tr class = "directionEntry">
+    <td class = "lessonProgress">
+     <span class = "progressNumber" style = "width:50px;">92.86%</span>
+     <span class = "progressBar" style = "width:46.43px;">&nbsp;</span>
+     &nbsp;&nbsp;
+    </td><td><a href = "student.php?lessons_ID=2" class = "info " url = "ask_information.php?lessons_ID=2">Maya civilization</a>
+           
+          </td>
+         </tr>
+        </table>
+        </td></tr>
+       </table>
+     <table class = "directionsTable" id = "direction_2" >
+      <tr class = "lessonsList">
+       <td class = "listPadding" style = "width:1px"><div style = "width:0px;">&nbsp;</div></td>
+       <td class = "listToggle"><img id = "subtree_img2"    src = 'themes/default/images/others/transparent.gif'  class = 'visible sprite16 sprite16-navigate_up' alt = "Click to toggle" title = "Click to toggle" onclick = "Element.extend(this);showHideDirections(this, '', '2', (this.hasClassName('visible')) ? 'hide' : 'show');"></td>
+       <td>
+        <img src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-categories' >
+        <span style = "display:none" id = "subtree_children_2"></span>
+       <span class = "listName">Programming</span></td>
+      </tr>
+      <tr id = "subtree2" name = "default_visible" > <td></td>
+       <td class = "lessonsList_nocolor">&nbsp;</td>
+       <td colspan = "2">
+        <table width = "100%"><tr class = "directionEntry">
+    <td class = "lessonProgress">
+     <span class = "progressNumber" style = "width:50px;">0%</span>
+     <span class = "progressBar" style = "width:0px;">&nbsp;</span>
+     &nbsp;&nbsp;
+    </td><td><a href = "student.php?lessons_ID=1" class = "info " url = "ask_information.php?lessons_ID=1">Greedy algorithms</a>
+           
+          </td>
+         </tr>
+        </table>
+        </td></tr>
+       <tr id = "subtree2" name = "default_visible" >
+        <td></td>
+        <td class = "lessonsList_nocolor">&nbsp;</td>
+        <td colspan = "2">
+        
+                        <table class = "coursesTable" >
+                            <tr class = "lessonsList" >
+                             <td>
+                                    <img id = "course_img1" src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-courses'>
+          <a href = "javascript:void(0)" class = "info" url = "ask_information.php?courses_ID=1" >
+           <span class = "listName">How to be a programmer</span>
+          </a>
+                                </td><td>
+                                </td></tr>
+                            <tr id = "subtree_course1" name = "default_visible" >
+                                <td colspan = "2">
+                                 <table><tr class = "directionEntry">
+       <td class = "lessonProgress">
+                                <span class = "progressNumber" style = "width:50px;">0%</span>
+                                <span class = "progressBar" style = "width:0px;">&nbsp;</span>
+                                &nbsp;&nbsp;
+                            </td>
+                      <td>
+                       <a href = "student.php?lessons_ID=3&from_course=1" class = "info" url = "ask_information.php?lessons_ID=3&from_course=1">How to be a programmer - Beginner</a>
+                                </td><tr class = "directionEntry">
+       <td class = "lessonProgress">
+                                <span class = "progressNumber" style = "width:50px;">0%</span>
+                                <span class = "progressBar" style = "width:0px;">&nbsp;</span>
+                                &nbsp;&nbsp;
+                            </td>
+                      <td>
+                       <a href = "student.php?lessons_ID=4&from_course=1" class = "info" url = "ask_information.php?lessons_ID=4&from_course=1">How to be a programmer - Intermediate</a>
+                                </td><tr class = "directionEntry">
+       <td class = "lessonProgress">
+                                <span class = "progressNumber" style = "width:50px;">0%</span>
+                                <span class = "progressBar" style = "width:0px;">&nbsp;</span>
+                                &nbsp;&nbsp;
+                            </td>
+                      <td>
+                       <a href = "student.php?lessons_ID=5&from_course=1" class = "info" url = "ask_information.php?lessons_ID=5&from_course=1">How to be a programmer - Advanced</a>
+                                </td>
+        </tr>
+                            </table>
+                        </td></tr>
+                        </table>
+        </td>
+       </tr>
+       </table>
+    
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+
+      </td></tr>
+ </table>
+    </td>
+    <td class = "layoutColumn right">
+     <table class = "centerTable">    <tr>
+     <td id = "sideColumn">
+         
+    <div class = "block" style = ";" id = "Tools" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '9083ff5d913ffa598da7afc2e12248e6')"  id = "Tools_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Tools</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Tools_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     
+       <table class = "iconTable"><tr>
+                     <td style = 'width:50%;' class = 'iconData' onclick = ";location='student.php?ctg=personal'">
+                         <a  href = "student.php?ctg=personal"  >
+                          <img  src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-user' title = "my Account" alt = "my Account" /><br>
+                          my Account
+                         </a>
+                        </td>
+                     <td style = 'width:50%;' class = 'iconData' onclick = "eF_js_showDivPopup('Group/Lesson key', 0, 'group_key_enter');location='javascript:void(0)'">
+                         <a  href = "javascript:void(0)" onclick = "eF_js_showDivPopup('Group/Lesson key', 0, 'group_key_enter')" >
+                          <img  src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-key' title = "Group/Lesson key" alt = "Group/Lesson key" /><br>
+                          Group/Lesson key
+                         </a>
+                        </td></tr><tr>
+                     <td style = 'width:50%;' class = 'iconData' onclick = ";location='student.php?ctg=lessons&catalog=1'">
+                         <a  href = "student.php?ctg=lessons&catalog=1"  >
+                          <img  src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-catalog' title = "Course catalog" alt = "Course catalog" /><br>
+                          Course catalog
+                         </a>
+                        </td>
+                     <td style = 'width:50%;' class = 'iconData' onclick = ";location='student.php?ctg=messages'">
+                         <a  href = "student.php?ctg=messages"  >
+                          <img  src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-mail' title = " Messages" alt = " Messages" /><br>
+                           Messages
+                         </a>
+                        </td></tr><tr>
+                     <td style = 'width:50%;' class = 'iconData' onclick = ";location='student.php?ctg=statistics'">
+                         <a  href = "student.php?ctg=statistics"  >
+                          <img  src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-reports' title = "Reports" alt = "Reports" /><br>
+                          Reports
+                         </a>
+                        </td>
+                     <td style = 'width:50%;' class = 'iconData' onclick = ";location='student.php?ctg=forum'">
+                         <a  href = "student.php?ctg=forum"  >
+                          <img  src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-forum' title = "Forum" alt = "Forum" /><br>
+                          Forum
+                         </a>
+                        </td></tr><tr>
+                     <td style = 'width:50%;' class = 'iconData' onclick = ";location='student.php?ctg=calendar'">
+                         <a  href = "student.php?ctg=calendar"  >
+                          <img  src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-calendar' title = "Calendar" alt = "Calendar" /><br>
+                          Calendar
+                         </a>
+                        </td><td></td></table>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+        </td>
+       </tr>
+       </table>    </td></tr>
+   </table>
+  </td></tr>
+   <tr><td style = "vertical-align:bottom">
+   <table style = "width:100%">
+    <tr><td class = "footer " colspan = "3">   <div><a href = "http://www.efrontlearning.net">eFront</a> (version 3.6.9) &bull; Community Edition &bull; <a href = "index.php?ctg=contact">Contact us</a></div>
+ </td></tr>
+   </table>
+  </td></tr>
+  </table>
+
+
+<script>
+
+var currentUnit = '';  var g_servername = 'https://app5.com/www/';
+</script>
+<script>var BOOKMARKTRANSLATION = 'Bookmarks';var NODATAFOUND = 'No data found';</script>
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=../modules/module_chat/js/jquery,../modules/module_chat/js/chat,EfrontScripts,scriptaculous/prototype,scriptaculous/scriptaculous,scriptaculous/effects,prototip/prototip,efront_ajax,includes/events"> </script> 
+
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=includes/lessons_list,includes/catalog,scriptaculous/controls"> </script>
+<script type = "text/javascript" src = "modules/module_rss/rss_reader.js"> </script> 
+<div id = "user_table" style = "display:none">
+
+    <div class = "block" style = ";" id = "Information" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'ec235e72cbe062927c3743a2ab5a4e0d')"  id = "Information_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table width = "100%">
+        <tr><td align = "left" id = "user_box" style = "padding:3px 3px 4px 5px;"></td></tr>
+    </table>
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<table id = "popup_table" class = "divPopup" style = "display:none;">
+    <tr class = "defaultRowHeight">
+        <td class = "topTitle" id = "popup_title"></td>
+        <td class = "topTitle" id = "popup_close_cell"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-close' alt = "Close" name = "" id = "popup_close" title = "Close" onclick = "if (document.getElementById('reloadHidden') && document.getElementById('reloadHidden').value == '1')  {parent.frames[1].location = parent.frames[1].location};eF_js_showDivPopup('', '', this.name);"/>
+    </td></tr>
+    <tr><td colspan = "2" id = "popup_data" style = ""></td></tr>
+    <tr><td colspan = "2" id = "frame_data" style = "display:none;">
+   <iframe name = "POPUP_FRAME" id = "popup_frame" src = "about:blank" >Sorry, but your browser needs to support iframes to see this</iframe>
+    </td></tr>
+</table>
+<div id = "error_details" style = "display:none">
+    <div class = "block" style = ";" id = "Error+Details" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'e8789eb13d4a000c7a2dc53000f4984d')"  id = "Error+Details_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Error Details</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Error+Details_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <pre></pre>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<div id = 'showMessageDiv' style = "display:none"></div>
+<div id="dimmer" class = "dimmerDiv" style = "display:none;"></div>
+<div id = "defaultExceptionHandlerDiv" style = "color:#ffffff;display:none"></div>
+
+ 
+
+
+
+<script type="text/javascript" >
+ var modulechatbaselink = 'https://app5.com/www/modules/module_chat/';
+ var modulechatbasedir = '/var/www/app5.com/public_html/www/modules/module_chat/';
+ var modulechatbaseurl = 'student.php?ctg=module&op=module_chat';
+ var ie = 0;
+</script>
+
+<link href="https://app5.com/www/modules/module_chat/css/screen.css" rel="stylesheet" type="text/css">
+<link href="https://app5.com/www/modules/module_chat/css/chat.css" rel="stylesheet" type="text/css">
+<!--[if IE ]>
+<link type="text/css" rel="stylesheet" media="all" href="https://app5.com/www/modules/module_chat/css/screen_ie.css" />
+<![endif]-->
+
+
+
+<div id="chat_module">
+ <div id="windowspace">
+  <div id="windows"></div>
+ </div>
+ <div id="chat_bar" onclick="javascript:toggle_users()">
+
+  <div id="user_list" >
+   <div id="content" >
+    <!-- Online Users displayed here -->
+   </div>
+  </div>
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+  <td id="first" >
+   <span id="status" >
+
+   </span>
+  </td>
+  <td align="right">
+  <a href="javascript:void(0)" onClick="javascript:on_off()"><img id="statusimg" src="https://app5.com/www/modules/module_chat/img/onoff18.png"/></a>
+
+  </td>
+  </tr>
+  </table>
+ </div>
+</div>
+
+
+<!--[if IE]>
+<bgsound id="sound">
+<script>var ie=1;</script>
+<![endif]-->
+<script type="text/javascript">
+ disableSelection(document.getElementById("chat_bar"))
+</script>
+
+
+
+<script>
+
+
+if (parent.frames[0].document.getElementById('dimmer'))
+ parent.frames[0].document.getElementById('dimmer').style.display = 'none'
+
+if (top.sideframe && top.sideframe.document && top.sideframe.document.getElementById('loading_sidebar'))
+    top.sideframe.document.getElementById('loading_sidebar').style.display = 'none'; //no prototype here please
+
+    var __shouldTriggerNextNotifications = false;
+
+
+
+
+
+
+
+if (!usingHorizontalInterface) {
+ if (top.sideframe && top.sideframe.document.getElementById('current_location')) {
+  top.sideframe.document.getElementById('current_location').value = top.mainframe.location.toString();
+ }
+} else {
+ if ($('current_location')) {
+  $('current_location').value = document.location.toString();
+ }
+}
+
+
+
+ translations['_COUPON'] = 'Coupon';
+ translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';
+      redirectLocation ='/www/student.php?ctg=lessons&catalog=1&checkout=1';
+   
+</script><script>
+    var ctg = 'lessons';
+</script>
+</body>
+</html><script>if (__shouldTriggerNextNotifications) { new Ajax.Request("send_notifications.php?ajax=1", {method:'get', asynchronous:true}); } </script>

@@ -1,0 +1,544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html    >
+<head>
+    <base href = "https://app5.com/www/">
+    <meta http-equiv = "Content-Language" content = "en">
+    <meta http-equiv = "keywords" content = "education">
+    <meta http-equiv = "description" content = "Collaborative Elearning Platform">
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+    <link rel="shortcut icon" href="themes/default/images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href = "themes/modern/css/css_global.css?build=10653">
+        <link rel = "stylesheet" type = "text/css" href = "modules/module_chat/css/screen.css?build=10653" />         <title>eFront | Refreshing eLearning</title>
+
+    
+    <script type = "text/javascript">
+        var ajaxObjects = new Array();
+                  top.document.title = "eFront | Refreshing eLearning";
+        if (window.name == 'POPUP_FRAME') var popup=1;
+        var globalImageExtension = 'png';
+                var usingHorizontalInterface = true;
+        
+        var sessionLogin = "student";
+        var translationsToJS = new Array();
+    </script>
+
+
+<script>var translations = new Array(); /*used for passing language tags to js*/</script>
+
+</head>
+<body id = "body_lessons" onkeypress = "if (window.eF_js_keypress) eF_js_keypress(event);" onbeforeunload = "if (window.getPeriodicData) getPeriodicData();">
+   
+<script>
+translations['_YOUHAVEBEENSUCCESSFULLYADDEDTOTHEGROUP'] = 'You have been successfully added to the group';
+</script>
+
+
+ <div id = "bookmarks_div_code" style = "display:none">
+    <div class = "block" style = ";" id = "Show+bookmarks" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '6c59f16fee21390ddba7b8844922df79')"  id = "Show+bookmarks_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Show bookmarks</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Show+bookmarks_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <div id = "bookmarks_div"></div>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<script>
+function changeItemColor(item, color) {
+//alert(document.getElementById(item).style.backgroundColor + ' ' +color);
+   document.getElementById(item).style.backgroundColor = color;
+}
+</script>
+ <table class = "pageLayout hideLeft" id = "pageLayout">
+  <tr><td style = "vertical-align:top">
+   <table style = "width:100%;">
+       <tr><td id ="horizontalBarRow" class = "header" colspan = "3"> <div id = "logo">
+  <a href = "/www/student.php">
+   <img  class = 'handle' src = "themes/modern/images/logo/logo.png" title = "eFront" alt = "eFront" />
+  </a>
+ </div>
+  <script>
+  var startUpdater = true;
+  var updaterPeriod = '100000';
+ </script>
+ <div id = "logout_link" >
+         <span class = "headerText" >
+    Connected:&nbsp;(<a href = "javascript:void(0)" class = "info"><span id = "header_connected_users">1</span><span class = "tooltipSpan">Student D. (student)</span></a>)
+    </span>
+          <a href = "userpage.php?ctg=personal&user=student" class="headerText" id = "personal_options_link">
+     Student D. (student)
+    </a>
+    <div style = "display:none" id = "my_personal_options">
+     <ul style = "list-style:none;padding:0px;" class = "headerMenu">
+           <li onclick = "location='/www/student.php?ctg=personal&user=student&op=dashboard'">Dashboard</li>
+           <li onclick = "location='/www/student.php?ctg=personal&user=student&op=profile'">Account</li>
+           <li onclick = "location='/www/student.php?ctg=personal&user=student&op=user_courses'">Learning</li>
+     
+
+
+
+     </ul>
+    </div>
+       <span class = "headerText">
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-mail' alt = " Messages" title = " Messages" onclick = "location='userpage.php?ctg=messages'"/>
+     <span id = "header_total_messages"></span>
+    </span>
+          <span class = "headerText"></span>
+    <select class = "inputSelectMed" onchange = "if (this.value) changeAccount(this.value)" >
+     <option value="">[Switch account]</option>
+          <option value="admin">Administrator S. (admin)</option>
+                      <option value="professor">Professor D. (professor)</option>
+                              </select>
+                  <a class = "headerText" href = "index.php?logout=true">Logout</a>
+     </div>
+   <div id = "path">
+  <div id = "path_title"><a class = "titleLink" title = "Home" href ="/www/student.php?ctg=control_panel">Home</a>&nbsp;<span>&raquo;&nbsp;</span><a class = 'titleLink' href = '/www/student.php?ctg=lessons&catalog=1'>Course catalog</a></div>
+  <div id = "tab_handles_div"></div>
+  <div id = "path_language">
+              <form action = "/www/student.php?ctg=lessons&op=search" method = "post">
+    <input type = "text" name = "search_text" value = "Search" onclick="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';" class = "searchBox" style = "background-image:url('themes/default/images/16x16/search.png');"/>
+    <input type = "hidden" name = "current_location" id = "current_location" />
+   </form>
+    </div>
+ </div></td></tr>
+      <tr><td class = "layoutColumn left">
+         </td>
+    <td class = "layoutColumn center">
+     <table class = "centerTable"> <tr><td class = "moduleCell">
+        <div id = 'group_key_enter' style = "display:none;">
+     
+    <div class = "block" style = ";" id = "Group%2FLesson+key" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '214703a26a00917bd6e7db67ca8023ac')"  id = "Group%2FLesson+key_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Group/Lesson key</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Group%2FLesson+key_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table>
+           <tr><td colspan = "2">&nbsp;</td></tr>
+           <tr><td class = "labelCell">Unique group key:&nbsp;</td>
+               <td class = "elementCell"><input class = "inputText" type = "text" id = "group_key" /></td></tr>
+           <tr><td colspan = "2">&nbsp;</td></tr>
+           <tr><td></td>
+            <td class = "submitCell"><input class = "flatButton" type = "button" onclick = "addGroupKey(this)" value="Submit" /></td></tr>
+           <tr><td colspan = "2"><span id = "resultReport"></span><img id = "progressImg" src = "themes/default/images/others/progress_big.gif" style = "display:none"/></td></tr>
+           <tr><td colspan = "2">&nbsp;</td></tr>
+           <tr><td colspan = "2" class = "horizontalSeparatorAbove">By submitting here a unique group key provided to you by the system administrator you are able to register yourself to all lessons of that particular group</td></tr>
+       </table>
+   
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+   </div>
+
+
+                                                               
+    <div class = "block" style = ";" id = "Information+for+course+%3Cspan+class+%3D+%27innerTableName%27%3E%26quot%3BHow+to+be+a+programmer%26quot%3B%3C%2Fspan%3E" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'afb9dec3412f840115dc1610fd5ac96f')"  id = "Information+for+course+%3Cspan+class+%3D+%27innerTableName%27%3E%26quot%3BHow+to+be+a+programmer%26quot%3B%3C%2Fspan%3E_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information for course <span class = 'innerTableName'>&quot;How to be a programmer&quot;</span></span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information+for+course+%3Cspan+class+%3D+%27innerTableName%27%3E%26quot%3BHow+to+be+a+programmer%26quot%3B%3C%2Fspan%3E_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+                
+ 
+  
+                        <div class = "lessonInfo"><span class = "infoTitle">Language:</span> English</div>
+
+   
+                            <div class = "lessonInfo"><span class = "infoTitle">Course lessons:</span>
+                     <a href = "/www/student.php?catalog=%22%20onmouseover=%22alert(%22cs5331_g7%22)&ctg=lessons&info_course=1#3" class = "editLink">How to be a programmer - Beginner,</a>
+                     <a href = "/www/student.php?catalog=%22%20onmouseover=%22alert(%22cs5331_g7%22)&ctg=lessons&info_course=1#4" class = "editLink">How to be a programmer - Intermediate,</a>
+                     <a href = "/www/student.php?catalog=%22%20onmouseover=%22alert(%22cs5331_g7%22)&ctg=lessons&info_course=1#5" class = "editLink">How to be a programmer - Advanced</a>
+                    </div>
+                            
+                    <div class = "courseLessonInfo">
+           <div class = "topTitle" >
+            <a href = "javascript:scroll(0,0)" name = "3" >How to be a programmer - Beginner</a>
+           </div>
+                       <div class = "lessonInfo"><span class = "infoTitle">Description:</span> This lesson includes introductory programming topics</div>
+                       <div class = "lessonInfo"><span class = "infoTitle">Resources:</span> Based on the short tutorial of Robert L. Read</div>
+                                   <div class = "lessonInfo"><span class = "infoTitle">Language:</span> English</div>            <div class = "lessonInfo"><span class = "infoTitle">Professors:</span> Default Professor</div>                         <div class = "lessonInfo"><span class = "infoTitle">Units:</span> 23, <span class = "infoTitle">Tests:</span> 1</div>
+                             <fieldset class = "fieldsetSeparator">
+                <legend>Lesson content</legend>
+                
+                <div id = "expand_collapse_divdhtml_content_tree_3" >
+                    <b><a href = "javascript:void(0)" onclick = "treeObj.setTreeId('dhtml_content_tree_3');treeObj.collapseAll();">Hide all</a></b> /
+                    <b><a href = "javascript:void(0)" onclick = "treeObj.setTreeId('dhtml_content_tree_3');treeObj.expandAll();" >Show all</a></b><br/>
+                </div>
+            <table>
+                <tr><td>
+                    <ul id = "dhtml_content_tree_3" class = "dhtmlgoodies_tree" selectedNode = "">
+                <li style = "white-space:nowrap;" class = "theory" id = "node31" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "1. Learn to Debug ">1. Learn to Debug </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node32" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "2. How to Debug by Splitting the Problem Space ">2. How to Debug by Splitting the Problem Space </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node33" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "3. How to Remove an Error ">3. How to Remove an Error </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node34" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "4. How to Debug Using a Log ">4. How to Debug Using a Log </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node35" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "5. How to Understand Performance Problems ">5. How to Understand Performance Problems </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node36" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "6. How to Fix Performance Problems ">6. How to Fix Performance Problems </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node37" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "7. How to Optimize Loops ">7. How to Optimize Loops </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node38" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "8. How to Deal with I-O Expense ">8. How to Deal with I-O Expense </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node39" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "9. How to Manage Memory ">9. How to Manage Memory </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node40" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "10. How to Deal with Intermittent Bugs ">10. How to Deal with Intermittent Bugs </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node41" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "11. How to Learn Design Skills ">11. How to Learn Design Skills </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node42" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "12. How to Conduct Experiments ">12. How to Conduct Experiments </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node43" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "13. Why Estimation is Important ">13. Why Estimation is Important </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node44" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "14. How to Estimate Programming Time ">14. How to Estimate Programming Time </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node45" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "15. How to Find Out Information ">15. How to Find Out Information </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node46" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "16. How to Utilize People as Information Sour... ">16. How to Utilize People as Information Sour... </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node47" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "17.  How to Document Wisely ">17.  How to Document Wisely </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node48" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "18. How to Work with Poor Code ">18. How to Work with Poor Code </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node49" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "19. How to Use Source Code Control ">19. How to Use Source Code Control </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node50" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "20. How to Unit Test ">20. How to Unit Test </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node51" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "21. Take Breaks when Stumped ">21. Take Breaks when Stumped </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node52" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "22. How to Recognize When to Go Home ">22. How to Recognize When to Go Home </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node53" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "23. How to Deal with Difficult People ">23. How to Deal with Difficult People </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "tests" id = "node54" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "Small self-assesment test ">Small self-assesment test </a>&nbsp;<span></span></li>
+                    </ul>
+                </td></tr>
+            </table>
+            </fieldset>
+                     </div>
+                    <div class = "courseLessonInfo">
+           <div class = "topTitle" >
+            <a href = "javascript:scroll(0,0)" name = "4" >How to be a programmer - Intermediate</a>
+           </div>
+                       <div class = "lessonInfo"><span class = "infoTitle">Description:</span> This lesson includes intermediate programming topics for the programmer that gains experience</div>
+                       <div class = "lessonInfo"><span class = "infoTitle">Other information:</span> Based on the short tutorial of Robert L. Read</div>
+                                   <div class = "lessonInfo"><span class = "infoTitle">Language:</span> English</div>            <div class = "lessonInfo"><span class = "infoTitle">Professors:</span> Default Professor</div>                         <div class = "lessonInfo"><span class = "infoTitle">Units:</span> 23, <span class = "infoTitle">Tests:</span> 1</div>
+                             <fieldset class = "fieldsetSeparator">
+                <legend>Lesson content</legend>
+                
+                <div id = "expand_collapse_divdhtml_content_tree_4" >
+                    <b><a href = "javascript:void(0)" onclick = "treeObj.setTreeId('dhtml_content_tree_4');treeObj.collapseAll();">Hide all</a></b> /
+                    <b><a href = "javascript:void(0)" onclick = "treeObj.setTreeId('dhtml_content_tree_4');treeObj.expandAll();" >Show all</a></b><br/>
+                </div>
+            <table>
+                <tr><td>
+                    <ul id = "dhtml_content_tree_4" class = "dhtmlgoodies_tree" selectedNode = "">
+                <li style = "white-space:nowrap;" class = "theory" id = "node75" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "1. How to Stay Motivated ">1. How to Stay Motivated </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node76" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "2. How to be Widely Trusted ">2. How to be Widely Trusted </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node77" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "3. How to Tradeoff Time vs. Space ">3. How to Tradeoff Time vs. Space </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node74" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "4. How to Stress Test ">4. How to Stress Test </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node73" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "5. How to Balance Brevity and Abstraction ">5. How to Balance Brevity and Abstraction </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node72" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "6. How to Learn New Skills ">6. How to Learn New Skills </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node71" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "6. How to Learn New Skills ">6. How to Learn New Skills </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node70" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "7. Learn to Type ">7. Learn to Type </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node68" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "8. How to Do Integration Testing ">8. How to Do Integration Testing </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node69" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "9. Communication Languages ">9. Communication Languages </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node67" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "10. How to Manage Development Time ">10. How to Manage Development Time </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node66" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "11. How to Manage Third-Party Software Risks ">11. How to Manage Third-Party Software Risks </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node65" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "12. How to Manage Consultants ">12. How to Manage Consultants </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node64" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Communicate the Right Amount ">How to Communicate the Right Amount </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node63" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Disagree Honestly and Get Away with It ">How to Disagree Honestly and Get Away with It </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node62" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Tradeoff Quality Against Development Time ">How to Tradeoff Quality Against Development Time </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node60" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Manage Software System Dependence ">How to Manage Software System Dependence </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node61" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Decide if Software is Too Immature ">How to Decide if Software is Too Immature </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node59" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Make a Buy vs. Build Decision ">How to Make a Buy vs. Build Decision </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node58" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Grow Professionally ">How to Grow Professionally </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node57" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Evaluate Interviewees ">How to Evaluate Interviewees </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node55" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Know When to Apply Fancy Computer Science ">How to Know When to Apply Fancy Computer Science </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node56" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Talk to Non-Engineers ">How to Talk to Non-Engineers </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "tests" id = "node78" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "A small programming test ">A small programming test </a>&nbsp;<span></span></li>
+                    </ul>
+                </td></tr>
+            </table>
+            </fieldset>
+                     </div>
+                    <div class = "courseLessonInfo">
+           <div class = "topTitle" >
+            <a href = "javascript:scroll(0,0)" name = "5" >How to be a programmer - Advanced</a>
+           </div>
+                       <div class = "lessonInfo"><span class = "infoTitle">Description:</span> This lesson includes advanced programming topics for experienced programmer or project manager of software projects</div>
+                       <div class = "lessonInfo"><span class = "infoTitle">Other information:</span> Based on the short tutorial of Robert L. Read</div>
+                                   <div class = "lessonInfo"><span class = "infoTitle">Language:</span> English</div>            <div class = "lessonInfo"><span class = "infoTitle">Professors:</span> Default Professor</div>                         <div class = "lessonInfo"><span class = "infoTitle">Units:</span> 17</div>
+                             <fieldset class = "fieldsetSeparator">
+                <legend>Lesson content</legend>
+                
+                <div id = "expand_collapse_divdhtml_content_tree_5" >
+                    <b><a href = "javascript:void(0)" onclick = "treeObj.setTreeId('dhtml_content_tree_5');treeObj.collapseAll();">Hide all</a></b> /
+                    <b><a href = "javascript:void(0)" onclick = "treeObj.setTreeId('dhtml_content_tree_5');treeObj.expandAll();" >Show all</a></b><br/>
+                </div>
+            <table>
+                <tr><td>
+                    <ul id = "dhtml_content_tree_5" class = "dhtmlgoodies_tree" selectedNode = "">
+                <li style = "white-space:nowrap;" class = "theory" id = "node94" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Tell the Hard From the Impossible ">How to Tell the Hard From the Impossible </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node95" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Utilize Embedded Languages ">How to Utilize Embedded Languages </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node93" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "Choosing Languages ">Choosing Languages </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node92" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Fight Schedule Pressure ">How to Fight Schedule Pressure </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node91" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Understand the User ">How to Understand the User </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node90" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Get a Promotion ">How to Get a Promotion </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node89" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Develop Talent ">How to Develop Talent </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node87" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Choose What to Work On ">How to Choose What to Work On </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node88" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Get the Most From Your Teammates ">How to Get the Most From Your Teammates </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node85" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Divide Problems ">How to Divide Problems </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node86" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Handle Boring Tasks ">How to Handle Boring Tasks </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node84" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Gather Support for a Project ">How to Gather Support for a Project </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node83" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Grow a System ">How to Grow a System </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node82" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Communicate Well ">How to Communicate Well </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node81" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Tell People Things They Do not Want to Hear ">How to Tell People Things They Do not Want to Hear </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node80" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Deal with Managerial Myths ">How to Deal with Managerial Myths </a>&nbsp;<span></span></li>
+                <li style = "white-space:nowrap;" class = "theory" id = "node79" noDrag = "true" noRename = "true" noDelete = "true">
+                    <a onclick = "return false" class = " treeLink treeUnclickable" href = "javascript:void(0)" title = "How to Deal with Temporary Organizational Chaos ">How to Deal with Temporary Organizational Chaos </a>&nbsp;<span></span></li>
+                    </ul>
+                </td></tr>
+            </table>
+            </fieldset>
+                     </div>
+                   
+                     
+          
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+                        </td></tr>
+ </table>
+    </td>
+    <td class = "layoutColumn right">
+     <table class = "centerTable">               
+    <div class = "block" style = ";" id = "Selected+lessons" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'f261b7bd5733decaf3fd6d9d1dcdeeaa')"  id = "Selected+lessons_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Selected lessons</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Selected+lessons_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <!--ajax:cart-->
+<div id = "cart" class = "cart"><div class = "emptyCategory">No data found</div></div><script type = "text/javascript">translations['_COUPON'] = 'Coupon';translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';redirectLocation ='/www/student.php?ctg=lessons&catalog=1&checkout=1';</script>
+<!--/ajax:cart-->
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+     </table>    </td></tr>
+   </table>
+  </td></tr>
+   <tr><td style = "vertical-align:bottom">
+   <table style = "width:100%">
+    <tr><td class = "footer " colspan = "3">   <div><a href = "http://www.efrontlearning.net">eFront</a> (version 3.6.9) &bull; Community Edition &bull; <a href = "index.php?ctg=contact">Contact us</a></div>
+ </td></tr>
+   </table>
+  </td></tr>
+  </table>
+
+
+<script>
+
+var currentUnit = '';  var g_servername = 'https://app5.com/www/';
+</script>
+<script>var BOOKMARKTRANSLATION = 'Bookmarks';var NODATAFOUND = 'No data found';</script>
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=../modules/module_chat/js/jquery,../modules/module_chat/js/chat,EfrontScripts,scriptaculous/prototype,scriptaculous/scriptaculous,scriptaculous/effects,prototip/prototip,efront_ajax,includes/events"> </script> 
+
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=includes/lessons_list,includes/catalog,scriptaculous/controls"> </script>
+<script type = "text/javascript" src = "modules/module_rss/rss_reader.js"> </script> 
+<div id = "user_table" style = "display:none">
+
+    <div class = "block" style = ";" id = "Information" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'ec235e72cbe062927c3743a2ab5a4e0d')"  id = "Information_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table width = "100%">
+        <tr><td align = "left" id = "user_box" style = "padding:3px 3px 4px 5px;"></td></tr>
+    </table>
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<table id = "popup_table" class = "divPopup" style = "display:none;">
+    <tr class = "defaultRowHeight">
+        <td class = "topTitle" id = "popup_title"></td>
+        <td class = "topTitle" id = "popup_close_cell"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-close' alt = "Close" name = "" id = "popup_close" title = "Close" onclick = "if (document.getElementById('reloadHidden') && document.getElementById('reloadHidden').value == '1')  {parent.frames[1].location = parent.frames[1].location};eF_js_showDivPopup('', '', this.name);"/>
+    </td></tr>
+    <tr><td colspan = "2" id = "popup_data" style = ""></td></tr>
+    <tr><td colspan = "2" id = "frame_data" style = "display:none;">
+   <iframe name = "POPUP_FRAME" id = "popup_frame" src = "about:blank" >Sorry, but your browser needs to support iframes to see this</iframe>
+    </td></tr>
+</table>
+<div id = "error_details" style = "display:none">
+    <div class = "block" style = ";" id = "Error+Details" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'e8789eb13d4a000c7a2dc53000f4984d')"  id = "Error+Details_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Error Details</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Error+Details_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <pre></pre>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<div id = 'showMessageDiv' style = "display:none"></div>
+<div id="dimmer" class = "dimmerDiv" style = "display:none;"></div>
+<div id = "defaultExceptionHandlerDiv" style = "color:#ffffff;display:none"></div>
+
+ 
+
+
+
+<script type="text/javascript" >
+ var modulechatbaselink = 'https://app5.com/www/modules/module_chat/';
+ var modulechatbasedir = '/var/www/app5.com/public_html/www/modules/module_chat/';
+ var modulechatbaseurl = 'student.php?ctg=module&op=module_chat';
+ var ie = 0;
+</script>
+
+<link href="https://app5.com/www/modules/module_chat/css/screen.css" rel="stylesheet" type="text/css">
+<link href="https://app5.com/www/modules/module_chat/css/chat.css" rel="stylesheet" type="text/css">
+<!--[if IE ]>
+<link type="text/css" rel="stylesheet" media="all" href="https://app5.com/www/modules/module_chat/css/screen_ie.css" />
+<![endif]-->
+
+
+
+<div id="chat_module">
+ <div id="windowspace">
+  <div id="windows"></div>
+ </div>
+ <div id="chat_bar" onclick="javascript:toggle_users()">
+
+  <div id="user_list" >
+   <div id="content" >
+    <!-- Online Users displayed here -->
+   </div>
+  </div>
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+  <td id="first" >
+   <span id="status" >
+
+   </span>
+  </td>
+  <td align="right">
+  <a href="javascript:void(0)" onClick="javascript:on_off()"><img id="statusimg" src="https://app5.com/www/modules/module_chat/img/onoff18.png"/></a>
+
+  </td>
+  </tr>
+  </table>
+ </div>
+</div>
+
+
+<!--[if IE]>
+<bgsound id="sound">
+<script>var ie=1;</script>
+<![endif]-->
+<script type="text/javascript">
+ disableSelection(document.getElementById("chat_bar"))
+</script>
+
+
+
+<script>
+
+
+if (parent.frames[0].document.getElementById('dimmer'))
+ parent.frames[0].document.getElementById('dimmer').style.display = 'none'
+
+if (top.sideframe && top.sideframe.document && top.sideframe.document.getElementById('loading_sidebar'))
+    top.sideframe.document.getElementById('loading_sidebar').style.display = 'none'; //no prototype here please
+
+    var __shouldTriggerNextNotifications = false;
+
+
+
+
+
+
+
+if (!usingHorizontalInterface) {
+ if (top.sideframe && top.sideframe.document.getElementById('current_location')) {
+  top.sideframe.document.getElementById('current_location').value = top.mainframe.location.toString();
+ }
+} else {
+ if ($('current_location')) {
+  $('current_location').value = document.location.toString();
+ }
+}
+
+
+
+ translations['_COUPON'] = 'Coupon';
+ translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';
+      redirectLocation ='/www/student.php?ctg=lessons&catalog=1&checkout=1';
+   
+</script><script>
+    var ctg = 'lessons';
+</script>
+</body>
+</html><script>if (__shouldTriggerNextNotifications) { new Ajax.Request("send_notifications.php?ajax=1", {method:'get', asynchronous:true}); } </script><script type = "text/javascript" src = "js/scripts.php?build=10653&load=drag-drop-folder-tree"> </script>

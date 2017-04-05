@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html  class = "popup"  >
+<head>
+    <base href = "https://app5.com/www/">
+    <meta http-equiv = "Content-Language" content = "en">
+    <meta http-equiv = "keywords" content = "education">
+    <meta http-equiv = "description" content = "Collaborative Elearning Platform">
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+    <link rel="shortcut icon" href="themes/default/images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href = "themes/modern/css/css_global.css?build=10653">
+        <link rel = "stylesheet" type = "text/css" href = "modules/module_chat/css/screen.css?build=10653" />         <title>eFront | Refreshing eLearning</title>
+
+    
+    <script type = "text/javascript">
+        var ajaxObjects = new Array();
+                  top.document.title = "eFront | Refreshing eLearning";
+        if (window.name == 'POPUP_FRAME') var popup=1;
+        var globalImageExtension = 'png';
+                var usingHorizontalInterface = true;
+        
+        var sessionLogin = "admin";
+        var translationsToJS = new Array();
+    </script>
+
+
+<script>var translations = new Array(); /*used for passing language tags to js*/</script>
+
+</head>
+<body id = "body_forum" onkeypress = "if (window.eF_js_keypress) eF_js_keypress(event);" onbeforeunload = "if (window.getPeriodicData) getPeriodicData();">
+<script language = "JavaScript" type = "text/javascript">
+
+
+
+
+
+
+</script>
+
+
+ 
+       
+  
+
+
+
+
+
+
+
+     <table class = "centerTable">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+       <tr><td class = "moduleCell">
+
+  
+    <div class = "block" style = ";" id = "Poll+properties" >
+        <div class = "blockContents" >
+          <span class = "handles"><a href = "javascript:void(0);"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-help'  title = "http://docs.efrontlearning.net/index.php/Forum" onclick = "PopupCenter('http://docs.efrontlearning.net/index.php/Forum?simple', 'helpwindow', '850', '500')"></a><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '46d5fc8dee2893df75f801cbf6fe5cc2')"  id = "Poll+properties_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Poll properties</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Poll+properties_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+       <script>var twooptionsminimum = 'At minimum two different options are required for the poll'; var removechoice= 'Remove choice';</script>
+     
+<script type="text/javascript">
+//<![CDATA[
+function validate_poll_add_form(frm) {
+  var value = '';
+  var errFlag = new Array();
+  var _qfGroups = {};
+  _qfMsg = '';
+
+  value = frm.elements['poll_subject'].value;
+  if (value == '' && !errFlag['poll_subject']) {
+    errFlag['poll_subject'] = true;
+    _qfMsg = _qfMsg + '\n - The field \"Title\" is mandatory';
+  }
+
+  value = frm.elements['options[0]'].value;
+  if (value == '' && !errFlag['options[0]']) {
+    errFlag['options[0]'] = true;
+    _qfMsg = _qfMsg + '\n - The field \"Insert the multiple choices\" is mandatory';
+  }
+
+  value = frm.elements['options[1]'].value;
+  if (value == '' && !errFlag['options[1]']) {
+    errFlag['options[1]'] = true;
+    _qfMsg = _qfMsg + '\n - The field \"Insert the multiple choices\" is mandatory';
+  }
+
+  if (_qfMsg != '') {
+    _qfMsg = 'The following errors occured:' + _qfMsg;
+    _qfMsg = _qfMsg + '\nPlease correct the above errors';
+    alert(_qfMsg);
+    return false;
+  }
+  return true;
+}
+//]]>
+</script>
+     <form  action="administrator.php?ctg=forum&amp;add=1&amp;type=poll&amp;forum_id=3" method="post" name="poll_add_form" id="poll_add_form" onsubmit="try { var myValidator = validate_poll_add_form; } catch(e) { return true; } return myValidator(this);"><input type="hidden" name="popup" value="1" />
+     <input name="_qf__poll_add_form" type="hidden" value="" />
+
+         <table class = "formElements">
+             <tr><td class = "labelCell">Title:&nbsp;</td>
+                 <td class = "elementCell"><input class="inputText" name="poll_subject" type="text" />              &nbsp;<span class = "formRequired">*</span>
+          </td></tr>
+                              <tr><td></td><td>
+    <span>
+     <img style="vertical-align:middle" src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-order' title = "Toggle editor/html mode" alt = "Toggle editor/html mode" />&nbsp;
+     <a href = "javascript:toggleEditor('poll_text','simpleEditor');" id = "toggleeditor_link">Toggle editor/html mode</a>
+    </span>
+    </td></tr>
+
+             <tr><td class = "labelCell">Body:&nbsp;</td>
+                 <td class = "elementCell"><textarea class="inputTextarea simpleEditor" name="poll_text"></textarea></td></tr>
+                              <tr><td class = "labelCell">Available from:&nbsp;</td>
+                 <td class = "elementCell"><select name="from[d]">
+	<option value="1">01</option>
+	<option value="2">02</option>
+	<option value="3">03</option>
+	<option value="4" selected="selected">04</option>
+	<option value="5">05</option>
+	<option value="6">06</option>
+	<option value="7">07</option>
+	<option value="8">08</option>
+	<option value="9">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+</select>&nbsp;<select name="from[m]">
+	<option value="1">01</option>
+	<option value="2">02</option>
+	<option value="3">03</option>
+	<option value="4" selected="selected">04</option>
+	<option value="5">05</option>
+	<option value="6">06</option>
+	<option value="7">07</option>
+	<option value="8">08</option>
+	<option value="9">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+</select>&nbsp;<select name="from[Y]">
+	<option value="2017" selected="selected">2017</option>
+	<option value="2018">2018</option>
+	<option value="2019">2019</option>
+</select></td></tr>
+                              <tr><td class = "labelCell">to:&nbsp;</td>
+                 <td class = "elementCell"><select name="to[d]">
+	<option value="1">01</option>
+	<option value="2">02</option>
+	<option value="3">03</option>
+	<option value="4" selected="selected">04</option>
+	<option value="5">05</option>
+	<option value="6">06</option>
+	<option value="7">07</option>
+	<option value="8">08</option>
+	<option value="9">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+</select>&nbsp;<select name="to[m]">
+	<option value="1">01</option>
+	<option value="2">02</option>
+	<option value="3">03</option>
+	<option value="4">04</option>
+	<option value="5" selected="selected">05</option>
+	<option value="6">06</option>
+	<option value="7">07</option>
+	<option value="8">08</option>
+	<option value="9">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+</select>&nbsp;<select name="to[Y]">
+	<option value="2017" selected="selected">2017</option>
+	<option value="2018">2018</option>
+	<option value="2019">2019</option>
+</select></td></tr>
+                              <tr><td class = "labelCell">Insert the multiple choices:</td>
+                 <td><table>
+                              <tr><td><input class="inputText inputText_QuestionChoice" name="options[0]" type="text" />              &nbsp;<span class = "formRequired">*</span>
+          </td>
+                                  </tr>
+                              <tr><td><input class="inputText inputText_QuestionChoice" name="options[1]" type="text" />              &nbsp;<span class = "formRequired">*</span>
+          </td>
+                                  </tr>
+                              <tr id = "last_node"></tr>
+                     </table>
+                 </td></tr>
+             <tr><td class = "labelCell">
+                     <a href = "javascript:void(0)" onclick = "addAdditionalChoice()"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-add' alt = "Add question" title = "Add question" border = "0"/></a>
+                 </td><td>
+                     <a href = "javascript:void(0)" onclick = "addAdditionalChoice()">Add option</a>
+                 </td></tr>
+             <tr><td colspan = "2">&nbsp;</td></tr>
+             <tr><td></td><td class = "submitCell"><input class="flatButton" name="submit_add_poll" value="Submit" type="submit" /></td></tr>
+         </table>
+     </form>
+  
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+
+</td></tr>
+     
+  
+  
+  
+  
+  
+ </table>
+
+
+<script>
+
+var currentUnit = '';  var g_servername = 'https://app5.com/www/';
+</script>
+<script>var BOOKMARKTRANSLATION = 'Bookmarks';var NODATAFOUND = 'No data found';</script>
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=../modules/module_chat/js/jquery,../modules/module_chat/js/chat,EfrontScripts,scriptaculous/prototype,scriptaculous/scriptaculous,scriptaculous/effects,prototip/prototip,efront_ajax,includes/events"> </script> 
+    <script type = "text/javascript" src = "editor/tiny_mce_new/tiny_mce_gzip.js"></script>
+     
+
+        <script type = "text/javascript">
+        <!--
+            tinyMCE_GZ.init({
+                mode : "specific_textareas",
+                editor_selector : "mceEditor,templateEditor,simpleEditor,digestEditor",
+                plugins : 'Jsvk,java,asciimath,asciisvg,table,style,save,advhr,advimage,advlink,emotions,iespell,preview,zoom,searchreplace,print,contextmenu,media,paste,directionality,fullscreen,index_link',
+                themes : 'simple,advanced',
+                languages : 'en', //theoritically, here must be all suported languages but tinymce reads only the last one (possibly a bug). So we load only the session language(makriria 2207/07/30)
+                disk_cache : true, // it was false... check lang issue
+                debug : false,
+                events : "onClick",
+                handle_event_callback : "myHandleEvent"
+        });
+        // -->
+
+        </script>
+ 
+ <script type="text/javascript" src="editor/tiny_mce_new/plugins/asciimath/js/ASCIIMathMLwFallback.js"></script>
+ <script type="text/javascript" src="editor/tiny_mce_new/plugins/asciisvg/js/ASCIIsvgPI.js"></script>
+ 
+ <script type="text/javascript">
+  var AScgiloc = 'editor/tiny_mce_new/php/svgimg.php';
+  var AMTcgiloc = 'http://www.imathas.com/cgi-bin/mimetex.cgi';
+ </script>
+ 
+ <script type = "text/javascript" src = "editor/tiny_mce_new/efront_init_tiny_mce.php"></script> 
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=includes/forum,includes/entity,scriptaculous/controls"> </script>
+<script type = "text/javascript" src = "modules/module_rss/rss_reader.js"> </script> 
+<div id = "user_table" style = "display:none">
+
+    <div class = "block" style = ";" id = "Information" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'd8a278b436114b10a2797b86686eac2f')"  id = "Information_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table width = "100%">
+        <tr><td align = "left" id = "user_box" style = "padding:3px 3px 4px 5px;"></td></tr>
+    </table>
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<table id = "popup_table" class = "divPopup" style = "display:none;">
+    <tr class = "defaultRowHeight">
+        <td class = "topTitle" id = "popup_title"></td>
+        <td class = "topTitle" id = "popup_close_cell"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-close' alt = "Close" name = "" id = "popup_close" title = "Close" onclick = "if (document.getElementById('reloadHidden') && document.getElementById('reloadHidden').value == '1')  {parent.frames[1].location = parent.frames[1].location};eF_js_showDivPopup('', '', this.name);"/>
+    </td></tr>
+    <tr><td colspan = "2" id = "popup_data" style = ""></td></tr>
+    <tr><td colspan = "2" id = "frame_data" style = "display:none;">
+   <iframe name = "POPUP_FRAME" id = "popup_frame" src = "about:blank" >Sorry, but your browser needs to support iframes to see this</iframe>
+    </td></tr>
+</table>
+<div id = "error_details" style = "display:none">
+    <div class = "block" style = ";" id = "Error+Details" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'c8dd5807a415fbae2fc67e8cf0e7609e')"  id = "Error+Details_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Error Details</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Error+Details_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <pre></pre>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<div id = 'showMessageDiv' style = "display:none"></div>
+<div id="dimmer" class = "dimmerDiv" style = "display:none;"></div>
+<div id = "defaultExceptionHandlerDiv" style = "color:#ffffff;display:none"></div>
+
+ 
+
+
+<script>
+
+
+if (parent.frames[0].document.getElementById('dimmer'))
+ parent.frames[0].document.getElementById('dimmer').style.display = 'none'
+
+if (top.sideframe && top.sideframe.document && top.sideframe.document.getElementById('loading_sidebar'))
+    top.sideframe.document.getElementById('loading_sidebar').style.display = 'none'; //no prototype here please
+
+    var __shouldTriggerNextNotifications = false;
+
+
+
+
+
+
+
+if (!usingHorizontalInterface) {
+ if (top.sideframe && top.sideframe.document.getElementById('current_location')) {
+  top.sideframe.document.getElementById('current_location').value = top.mainframe.location.toString();
+ }
+} else {
+ if ($('current_location')) {
+  $('current_location').value = document.location.toString();
+ }
+}
+
+
+
+ translations['_COUPON'] = 'Coupon';
+ translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';
+      redirectLocation ='/www/administrator.php?ctg=lessons&catalog=1&checkout=1';
+   
+</script></body>
+</html><script>if (__shouldTriggerNextNotifications) { new Ajax.Request("send_notifications.php?ajax=1", {method:'get', asynchronous:true}); } </script>

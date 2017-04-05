@@ -1,0 +1,828 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html    >
+<head>
+    <base href = "https://app5.com/www/">
+    <meta http-equiv = "Content-Language" content = "en">
+    <meta http-equiv = "keywords" content = "education">
+    <meta http-equiv = "description" content = "Collaborative Elearning Platform">
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+    <link rel="shortcut icon" href="themes/default/images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href = "themes/modern/css/css_global.css?build=10653">
+        <link rel = "stylesheet" type = "text/css" href = "modules/module_chat/css/screen.css?build=10653" />         <title>eFront | Refreshing eLearning</title>
+
+    
+    <script type = "text/javascript">
+        var ajaxObjects = new Array();
+                  top.document.title = "eFront | Refreshing eLearning";
+        if (window.name == 'POPUP_FRAME') var popup=1;
+        var globalImageExtension = 'png';
+                var usingHorizontalInterface = true;
+        
+        var sessionLogin = "admin";
+        var translationsToJS = new Array();
+    </script>
+
+
+<script>var translations = new Array(); /*used for passing language tags to js*/</script>
+
+</head>
+<body id = "body_themes" onkeypress = "if (window.eF_js_keypress) eF_js_keypress(event);" onbeforeunload = "if (window.getPeriodicData) getPeriodicData();">
+<script language = "JavaScript" type = "text/javascript">
+
+
+
+
+
+
+</script>
+
+
+ 
+
+
+
+
+
+
+
+
+       <table class = "pageLayout centerFull" id = "pageLayout">
+  <tr><td style = "vertical-align:top">
+   <table style = "width:100%;">
+       <tr><td id ="horizontalBarRow" class = "header" colspan = "3"> <div id = "logo">
+  <a href = "/www/administrator.php">
+   <img  class = 'handle' src = "themes/modern/images/logo/logo.png" title = "eFront" alt = "eFront" />
+  </a>
+ </div>
+  <script>
+  var startUpdater = true;
+  var updaterPeriod = '100000';
+ </script>
+ <div id = "logout_link" >
+         <span class = "headerText" >
+    Connected:&nbsp;(<a href = "javascript:void(0)" class = "info"><span id = "header_connected_users">2</span><span class = "tooltipSpan">Administrator S. (admin),&nbsp;Student D. (student)</span></a>)
+    </span>
+          <a href = "userpage.php?ctg=personal&user=admin" class="headerText" id = "personal_options_link">
+     Administrator S. (admin)
+    </a>
+    <div style = "display:none" id = "my_personal_options">
+     <ul style = "list-style:none;padding:0px;" class = "headerMenu">
+           <li onclick = "location='/www/administrator.php?ctg=personal&user=admin&op=dashboard'">Dashboard</li>
+           <li onclick = "location='/www/administrator.php?ctg=personal&user=admin&op=profile'">Account</li>
+     
+
+
+
+     </ul>
+    </div>
+       <span class = "headerText">
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-mail' alt = " Messages" title = " Messages" onclick = "location='userpage.php?ctg=messages'"/>
+     <span id = "header_total_messages"></span>
+    </span>
+          <span class = "headerText"></span>
+    <select class = "inputSelectMed" onchange = "if (this.value) changeAccount(this.value)" >
+     <option value="">[Switch account]</option>
+          <option value="professor">Professor D. (professor)</option>
+                      <option value="student">Student D. (student)</option>
+                              </select>
+                  <a class = "headerText" href = "index.php?logout=true">Logout</a>
+     </div>
+   <div id = "path">
+  <div id = "path_title"><a class = "titleLink" title="Home" href ="/www/administrator.php?ctg=control_panel">Home</a>&nbsp;<span>&raquo;&nbsp;</span><a class = "titleLink" href ="/www/administrator.php?ctg=themes">Themes</a></div>
+  <div id = "tab_handles_div"></div>
+  <div id = "path_language">
+              <form action = "/www/administrator.php?ctg=control_panel&op=search" method = "post">
+    <input type = "text" name = "search_text" value = "Search" onclick="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';" class = "searchBox" style = "background-image:url('themes/default/images/16x16/search.png');"/>
+    <input type = "hidden" name = "current_location" id = "current_location" />
+   </form>
+    </div>
+ </div></td></tr>
+      <tr><td class = "layoutColumn left">
+         </td>
+    <td class = "layoutColumn center">
+         <table class = "centerTable">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                              <tr><td class = "moduleCell">
+                                     
+    
+   
+    <div class = "block" style = ";" id = "Themes" >
+        <div class = "blockContents" >
+          <span class = "handles"><a  href = "administrator.php?ctg=system_config&op=appearance"   ><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-layout' title = 'Appearance' alt = 'Appearance' /></a><a href = "javascript:void(0);"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-help'  title = "http://docs.efrontlearning.net/index.php/Themes" onclick = "PopupCenter('http://docs.efrontlearning.net/index.php/Themes?simple', 'helpwindow', '850', '500')"></a><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '8d118742a1bf1f0a0454efed3c3ebdc1')"  id = "Themes_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Themes</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Themes_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+      <div class = "tabber">
+        <div class="tabbertab " title = "Layout">  
+    
+    
+    <div class = "block" style = ";" id = "Layout+for+theme%3Cspan+class+%3D+%27innerTableName%27%3E%26nbsp%3B%26quot%3Bmodern%26quot%3B%3C%2Fspan%3E" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '7173412dfff77642da5ede60cff4387d')"  id = "Layout+for+theme%3Cspan+class+%3D+%27innerTableName%27%3E%26nbsp%3B%26quot%3Bmodern%26quot%3B%3C%2Fspan%3E_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Layout for theme<span class = 'innerTableName'>&nbsp;&quot;modern&quot;</span></span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Layout+for+theme%3Cspan+class+%3D+%27innerTableName%27%3E%26nbsp%3B%26quot%3Bmodern%26quot%3B%3C%2Fspan%3E_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+          
+         <div class = "headerTools">
+     <span>
+      <img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-layout' alt = "Change layout for theme" title = "Change layout for theme" />
+      <label for = "layout_for_theme">Change layout for theme:&nbsp;</label>
+      <select name = "layout_for_theme" id = "layout_for_theme" onchange = "location = '/www/administrator.php?ctg=themes&theme_layout='+this.options[this.options.selectedIndex].value">
+             <option value = "1" >default</option>
+             <option value = "2" selected>modern</option>
+             <option value = "3" >pad</option>
+             <option value = "4" >IE6</option>
+             <option value = "5" >green</option>
+             <option value = "6" >blue_html5</option>
+             <option value = "7" >mobile</option>
+             <option value = "8" >blue</option>
+            </select>
+     </span>
+     <span class = "headerTools">
+      <img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-import' alt = "Import" title = "Import settings" />
+      <a href = "javascript:void(0);" onclick = "eF_js_showDivPopup('Import settings', 0, 'import_settings')">Import settings</a>
+     </span>
+     <span class = "headerTools">
+      <img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-export' alt = "Export" title = "Export settings" />
+      <a href = "javascript:void(0);" onclick = "exportLayout(this)">Export settings</a>
+     </span>
+    </div>
+    <div id = "import_settings" style = "display:none">
+
+        
+        <form  action="administrator.php?ctg=themes&amp;theme=2" method="post" name="import_settings_form" id="import_settings_form" enctype="multipart/form-data">
+            <input name="_qf__import_settings_form" type="hidden" value="" />
+<input name="MAX_FILE_SIZE" type="hidden" value="2097152" />
+
+            <table class = "formElements">
+                <tr><td class = "labelCell">Settings file:&nbsp;</td>
+                    <td><input class="inputText" name="file_upload" type="file" /></td></tr>
+                <tr><td></td><td class = "infoCell">Each file must be smaller than <b>2048</b> KB</td></tr>
+                <tr><td></td><td class = "submitCell"><input class="flatButton" name="submit_import" value="Submit" type="submit" /></td></tr>
+            </table>
+        </form>
+    </div>
+    <table id = "layoutMenu">
+     <tr>
+      <td id = "left">
+             <div class = "layoutLabel mediumHeader">Select a layout</div>
+             <div id = "layout_simple" class = "layout hideBoth" onclick = "setSelected(this);">     <table class = "layout preview">
+      <tr><td class = "header" colspan = "3"></td></tr>
+      <tr><td class = "layoutLeft">
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+          </td><td class = "layoutCenter">
+                 <div class = "layoutBlock">&nbsp;</div>
+                 <div class = "layoutBlock">&nbsp;</div>
+          </td><td class = "layoutRight">
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+          </td></tr>
+      <tr><td class = "footer" colspan = "3"></td></tr>
+     </table>
+     </div>
+             <div class = "layoutLabel">Simple</div>
+             <div id = "layout_left" class = "layout hideRight" onclick = "setSelected(this);">     <table class = "layout preview">
+      <tr><td class = "header" colspan = "3"></td></tr>
+      <tr><td class = "layoutLeft">
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+          </td><td class = "layoutCenter">
+                 <div class = "layoutBlock">&nbsp;</div>
+                 <div class = "layoutBlock">&nbsp;</div>
+          </td><td class = "layoutRight">
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+          </td></tr>
+      <tr><td class = "footer" colspan = "3"></td></tr>
+     </table>
+     </div>
+             <div class = "layoutLabel">Two columns left-aligned</div>
+             <div id = "layout_three" class = "layout" onclick = "setSelected(this);">     <table class = "layout preview">
+      <tr><td class = "header" colspan = "3"></td></tr>
+      <tr><td class = "layoutLeft">
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+          </td><td class = "layoutCenter">
+                 <div class = "layoutBlock">&nbsp;</div>
+                 <div class = "layoutBlock">&nbsp;</div>
+          </td><td class = "layoutRight">
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+          </td></tr>
+      <tr><td class = "footer" colspan = "3"></td></tr>
+     </table>
+     </div>
+             <div class = "layoutLabel">Three columns (Default)</div>
+             <div id = "layout_right" class = "layout hideLeft" onclick = "setSelected(this);">     <table class = "layout preview">
+      <tr><td class = "header" colspan = "3"></td></tr>
+      <tr><td class = "layoutLeft">
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+          </td><td class = "layoutCenter">
+                 <div class = "layoutBlock">&nbsp;</div>
+                 <div class = "layoutBlock">&nbsp;</div>
+          </td><td class = "layoutRight">
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+           <div class = "layoutBlock">&nbsp;</div>
+          </td></tr>
+      <tr><td class = "footer" colspan = "3"></td></tr>
+     </table>
+     </div>
+             <div class = "layoutLabel">Two columns right-aligned</div>
+            </td>
+            <td id = "center">
+             <div class = "layoutLabel mediumHeader">Current layout <a href = "https://app5.com/www/" target = "_NEW" ><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-search' alt = "Preview saved layout" title = "Preview saved layout"></a></div>
+             <div class = "layout">     <table class = "layout edit" id = "editLayout">
+      <tr><td class = "header " colspan = "3">&nbsp;
+       </td></tr>
+      <tr><td class = "layoutLeft"><ul class = "sortable" id = "leftList"></ul></td>
+       <td class = "layoutCenter"><ul class = "sortable" id = "centerList"></ul></td>
+       <td class = "layoutRight"><ul class = "sortable" id = "rightList"></ul></td></tr>
+      <tr><td class = "footer " colspan = "3">&nbsp;
+       </td></tr>
+     </table>
+     </div>
+            </td>
+            <td id = "right">
+             <div class = "layoutLabel mediumHeader">Available blocks</div>
+             <div class = "layoutBlock"><img src = 'themes/default/images/others/transparent.gif'  class = 'handle sprite32 sprite32-add' alt = "Add block" title = "Add block" onclick = "location = location + '&tab=layout&add_block=1'" ></div>
+       <ul class = "sortable" id = "toolsList"></ul>
+            </td>
+        </tr>
+        <tr><td colspan = "3" id = "buttons">
+          <div>
+           <span>
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite32 sprite32-generic' alt = "Restore default layout" title = "Restore default layout" onclick = "if (confirm('This action will delete all modifications, including custom blocks and header/footer. Are you sure?')) updateLayoutPositions(this, true)" />
+            <br/>Restore default layout
+           </span>
+           <span>
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite32 sprite32-go_back' alt = "Undo all changes" title = "Undo all changes" onclick = "location=location+'&tab=layout'" />
+            <br/>Undo all changes
+           </span>
+           <span>
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite32 sprite32-success' alt = "Save layout" title = "Save layout" onclick = "updateLayoutPositions(this)">
+            <br/>Save layout
+           </span>
+          </div>
+        </td></tr>
+    </table>
+    
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+     var edittag = 'Edit';var deletetag = 'Delete';var irreversible = 'This operation is irreversible! Are you sure?';var toggletag='Toggle access as a separate page';
+     var positions = '{"layout":"left","leftList":["login","online","selectedLessons"],"centerList":["news","lessons"],"rightList":[]}';
+     var blocks = '{"login":"Login","online":"Connected users","lessons":"Lessons","selectedLessons":"Selected lessons","news":"System news","links":"Menu","checker":"Settings checker"}';
+     var currentLayout = '';
+    </script>
+ </div>
+        <div class="tabbertab " title = "Change theme">    
+    <div class = "block" style = ";" id = "Theme+selection" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '1a219a766c7eab88a14935130c15bce2')"  id = "Theme+selection_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Theme selection</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Theme+selection_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+       <script>var activetheme = 'Active theme';var usetheme = 'Use theme';</script>
+    <div class = "headerTools">
+   <span>
+    <img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-add' title = "Install theme" alt = "Install theme"/>
+    <a href = "/www/administrator.php?ctg=themes&add=1&popup=1" onclick = "eF_js_showDivPopup('Install theme', 2)" title = "Install theme" target = "POPUP_FRAME">Install theme</a>
+   </span>
+  </div>
+    <table style="width: 100%" class="sortedTable" id = "themesTable">
+   <tr class="defaultRowHeight">
+    <td class = "topTitle">Name</td>
+    <td class = "topTitle">Author</td>
+    <td class = "topTitle">Version</td>
+    <td class = "topTitle centerAlign noSort">Active theme</td>
+       <td class = "topTitle centerAlign noSort"><img src = "themes/default/images/file_types/ie.png" alt = "Internet Explorer" title = "Internet Explorer"></td>
+       <td class = "topTitle centerAlign noSort"><img src = "themes/default/images/file_types/ie6.png" alt = "Internet Explorer 6" title = "Internet Explorer 6"></td>
+       <td class = "topTitle centerAlign noSort"><img src = "themes/default/images/file_types/firefox.png" alt = "Mozilla Firefox" title = "Mozilla Firefox"></td>
+       <td class = "topTitle centerAlign noSort"><img src = "themes/default/images/file_types/safari.png" alt = "Apple Safari" title = "Apple Safari"></td>
+       <td class = "topTitle centerAlign noSort"><img src = "themes/default/images/file_types/chrome.png" alt = "Google Chrome" title = "Google Chrome"></td>
+       <td class = "topTitle centerAlign noSort"><img src = "themes/default/images/file_types/opera.png" alt = "Opera" title = "Opera"></td>
+       <td class = "topTitle centerAlign noSort"><img src = "themes/default/images/file_types/mobile.png" alt = "Mobile client" title = "Mobile client"></td>
+       <td class = "topTitle centerAlign">Operations</td>
+   </tr>
+      <tr class="oddRowColor">
+    <td>default</td>
+    <td>eFront team</td>
+    <td>1.0</td>
+    <td class = "centerAlign currentTheme">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-pin_red' alt = "Use theme" title = "Use theme" onclick = "useTheme(this, '1')">
+           </td>
+       <td class = "centerAlign ie">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '1', 'ie')"/>
+           </td>
+       <td class = "centerAlign ie6">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie6 sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '1', 'ie6')"/>
+           </td>
+       <td class = "centerAlign firefox">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_firefox sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '1', 'firefox')"/>
+           </td>
+       <td class = "centerAlign safari">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_safari sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '1', 'safari')"/>
+           </td>
+       <td class = "centerAlign chrome">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_chrome sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '1', 'chrome')"/>
+           </td>
+       <td class = "centerAlign opera">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_opera sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '1', 'opera')"/>
+           </td>
+       <td class = "centerAlign mobile">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_mobile sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '1', 'mobile')"/>
+           </td>
+       <td class = "centerAlign">
+     <div style = "display:none" id = "theme_settings_default"></div>
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-search' title = "Preview" alt = "Preview" onclick = "window.open('index.php?preview_theme=1', 'preview_theme')" />
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-export' alt = "Export theme" title = "Export theme" onclick = "exportTheme(this, '1')">
+                   </td>
+   </tr>
+      <tr class=" evenRowColor">
+    <td>modern</td>
+    <td>Athanasios Papagelis</td>
+    <td>1.0</td>
+    <td class = "centerAlign currentTheme">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-pin_green' alt = "Active theme" title = "Active theme" onclick = "useTheme(this, '2')">
+           </td>
+       <td class = "centerAlign ie">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie sprite16 sprite16-pin_green' alt = "Default theme for this browser" title = "Default theme for this browser" onclick = "setBrowser(this, '2', 'ie')"/>
+           </td>
+       <td class = "centerAlign ie6">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie6 sprite16 sprite16-pin_green' alt = "Default theme for this browser" title = "Default theme for this browser" onclick = "setBrowser(this, '2', 'ie6')"/>
+           </td>
+       <td class = "centerAlign firefox">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_firefox sprite16 sprite16-pin_green' alt = "Default theme for this browser" title = "Default theme for this browser" onclick = "setBrowser(this, '2', 'firefox')"/>
+           </td>
+       <td class = "centerAlign safari">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_safari sprite16 sprite16-pin_green' alt = "Default theme for this browser" title = "Default theme for this browser" onclick = "setBrowser(this, '2', 'safari')"/>
+           </td>
+       <td class = "centerAlign chrome">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_chrome sprite16 sprite16-pin_green' alt = "Default theme for this browser" title = "Default theme for this browser" onclick = "setBrowser(this, '2', 'chrome')"/>
+           </td>
+       <td class = "centerAlign opera">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_opera sprite16 sprite16-pin_green' alt = "Default theme for this browser" title = "Default theme for this browser" onclick = "setBrowser(this, '2', 'opera')"/>
+           </td>
+       <td class = "centerAlign mobile">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_mobile sprite16 sprite16-pin_green' alt = "Default theme for this browser" title = "Default theme for this browser" onclick = "setBrowser(this, '2', 'mobile')"/>
+           </td>
+       <td class = "centerAlign">
+     <div style = "display:none" id = "theme_settings_modern"></div>
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-search' title = "Preview" alt = "Preview" onclick = "window.open('index.php?preview_theme=2', 'preview_theme')" />
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-export' alt = "Export theme" title = "Export theme" onclick = "exportTheme(this, '2')">
+             <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-undo' title = "Reset theme" alt = "Reset theme" onclick = "resetTheme(this, '2')" />
+               </td>
+   </tr>
+      <tr class="oddRowColor">
+    <td>pad</td>
+    <td>Athanasios Papagelis</td>
+    <td>1.0</td>
+    <td class = "centerAlign currentTheme">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-pin_red' alt = "Use theme" title = "Use theme" onclick = "useTheme(this, '3')">
+           </td>
+       <td class = "centerAlign ie">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '3', 'ie')"/>
+           </td>
+       <td class = "centerAlign ie6">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie6 sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '3', 'ie6')"/>
+           </td>
+       <td class = "centerAlign firefox">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_firefox sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '3', 'firefox')"/>
+           </td>
+       <td class = "centerAlign safari">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_safari sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '3', 'safari')"/>
+           </td>
+       <td class = "centerAlign chrome">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_chrome sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '3', 'chrome')"/>
+           </td>
+       <td class = "centerAlign opera">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_opera sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '3', 'opera')"/>
+           </td>
+       <td class = "centerAlign mobile">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_mobile sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '3', 'mobile')"/>
+           </td>
+       <td class = "centerAlign">
+     <div style = "display:none" id = "theme_settings_pad"></div>
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-search' title = "Preview" alt = "Preview" onclick = "window.open('index.php?preview_theme=3', 'preview_theme')" />
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-export' alt = "Export theme" title = "Export theme" onclick = "exportTheme(this, '3')">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-error_delete' title = "Delete" alt = "Delete" onclick = "if (confirm ('This operation is irreversible! Are you sure?')) deleteEntity(this, '3')" />       </td>
+   </tr>
+      <tr class=" evenRowColor">
+    <td>IE6</td>
+    <td>eFront team</td>
+    <td>1.0</td>
+    <td class = "centerAlign currentTheme">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-pin_red' alt = "Use theme" title = "Use theme" onclick = "useTheme(this, '4')">
+           </td>
+       <td class = "centerAlign ie">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '4', 'ie')"/>
+           </td>
+       <td class = "centerAlign ie6">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie6 sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '4', 'ie6')"/>
+           </td>
+       <td class = "centerAlign firefox">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_firefox sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '4', 'firefox')"/>
+           </td>
+       <td class = "centerAlign safari">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_safari sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '4', 'safari')"/>
+           </td>
+       <td class = "centerAlign chrome">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_chrome sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '4', 'chrome')"/>
+           </td>
+       <td class = "centerAlign opera">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_opera sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '4', 'opera')"/>
+           </td>
+       <td class = "centerAlign mobile">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_mobile sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '4', 'mobile')"/>
+           </td>
+       <td class = "centerAlign">
+     <div style = "display:none" id = "theme_settings_IE6"></div>
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-search' title = "Preview" alt = "Preview" onclick = "window.open('index.php?preview_theme=4', 'preview_theme')" />
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-export' alt = "Export theme" title = "Export theme" onclick = "exportTheme(this, '4')">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-error_delete' title = "Delete" alt = "Delete" onclick = "if (confirm ('This operation is irreversible! Are you sure?')) deleteEntity(this, '4')" />       </td>
+   </tr>
+      <tr class="oddRowColor">
+    <td>green</td>
+    <td>eFront team</td>
+    <td>1.0</td>
+    <td class = "centerAlign currentTheme">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-pin_red' alt = "Use theme" title = "Use theme" onclick = "useTheme(this, '5')">
+           </td>
+       <td class = "centerAlign ie">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '5', 'ie')"/>
+           </td>
+       <td class = "centerAlign ie6">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie6 sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '5', 'ie6')"/>
+           </td>
+       <td class = "centerAlign firefox">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_firefox sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '5', 'firefox')"/>
+           </td>
+       <td class = "centerAlign safari">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_safari sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '5', 'safari')"/>
+           </td>
+       <td class = "centerAlign chrome">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_chrome sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '5', 'chrome')"/>
+           </td>
+       <td class = "centerAlign opera">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_opera sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '5', 'opera')"/>
+           </td>
+       <td class = "centerAlign mobile">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_mobile sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '5', 'mobile')"/>
+           </td>
+       <td class = "centerAlign">
+     <div style = "display:none" id = "theme_settings_green"></div>
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-search' title = "Preview" alt = "Preview" onclick = "window.open('index.php?preview_theme=5', 'preview_theme')" />
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-export' alt = "Export theme" title = "Export theme" onclick = "exportTheme(this, '5')">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-error_delete' title = "Delete" alt = "Delete" onclick = "if (confirm ('This operation is irreversible! Are you sure?')) deleteEntity(this, '5')" />       </td>
+   </tr>
+      <tr class=" evenRowColor">
+    <td>blue_html5</td>
+    <td>Athanasios Papagelis</td>
+    <td>1.0</td>
+    <td class = "centerAlign currentTheme">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-pin_red' alt = "Use theme" title = "Use theme" onclick = "useTheme(this, '6')">
+           </td>
+       <td class = "centerAlign ie">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '6', 'ie')"/>
+           </td>
+       <td class = "centerAlign ie6">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie6 sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '6', 'ie6')"/>
+           </td>
+       <td class = "centerAlign firefox">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_firefox sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '6', 'firefox')"/>
+           </td>
+       <td class = "centerAlign safari">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_safari sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '6', 'safari')"/>
+           </td>
+       <td class = "centerAlign chrome">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_chrome sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '6', 'chrome')"/>
+           </td>
+       <td class = "centerAlign opera">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_opera sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '6', 'opera')"/>
+           </td>
+       <td class = "centerAlign mobile">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_mobile sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '6', 'mobile')"/>
+           </td>
+       <td class = "centerAlign">
+     <div style = "display:none" id = "theme_settings_blue_html5"></div>
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-search' title = "Preview" alt = "Preview" onclick = "window.open('index.php?preview_theme=6', 'preview_theme')" />
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-export' alt = "Export theme" title = "Export theme" onclick = "exportTheme(this, '6')">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-error_delete' title = "Delete" alt = "Delete" onclick = "if (confirm ('This operation is irreversible! Are you sure?')) deleteEntity(this, '6')" />       </td>
+   </tr>
+      <tr class="oddRowColor">
+    <td>mobile</td>
+    <td>eFront team</td>
+    <td>1.0</td>
+    <td class = "centerAlign currentTheme">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-pin_red' alt = "Use theme" title = "Use theme" onclick = "useTheme(this, '7')">
+           </td>
+       <td class = "centerAlign ie">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '7', 'ie')"/>
+           </td>
+       <td class = "centerAlign ie6">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie6 sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '7', 'ie6')"/>
+           </td>
+       <td class = "centerAlign firefox">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_firefox sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '7', 'firefox')"/>
+           </td>
+       <td class = "centerAlign safari">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_safari sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '7', 'safari')"/>
+           </td>
+       <td class = "centerAlign chrome">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_chrome sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '7', 'chrome')"/>
+           </td>
+       <td class = "centerAlign opera">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_opera sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '7', 'opera')"/>
+           </td>
+       <td class = "centerAlign mobile">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_mobile sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '7', 'mobile')"/>
+           </td>
+       <td class = "centerAlign">
+     <div style = "display:none" id = "theme_settings_mobile"></div>
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-search' title = "Preview" alt = "Preview" onclick = "window.open('index.php?preview_theme=7', 'preview_theme')" />
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-export' alt = "Export theme" title = "Export theme" onclick = "exportTheme(this, '7')">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-error_delete' title = "Delete" alt = "Delete" onclick = "if (confirm ('This operation is irreversible! Are you sure?')) deleteEntity(this, '7')" />       </td>
+   </tr>
+      <tr class=" evenRowColor">
+    <td>blue</td>
+    <td>eFront team</td>
+    <td>1.0</td>
+    <td class = "centerAlign currentTheme">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-pin_red' alt = "Use theme" title = "Use theme" onclick = "useTheme(this, '8')">
+           </td>
+       <td class = "centerAlign ie">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '8', 'ie')"/>
+           </td>
+       <td class = "centerAlign ie6">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_ie6 sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '8', 'ie6')"/>
+           </td>
+       <td class = "centerAlign firefox">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_firefox sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '8', 'firefox')"/>
+           </td>
+       <td class = "centerAlign safari">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_safari sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '8', 'safari')"/>
+           </td>
+       <td class = "centerAlign chrome">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_chrome sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '8', 'chrome')"/>
+           </td>
+       <td class = "centerAlign opera">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_opera sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '8', 'opera')"/>
+           </td>
+       <td class = "centerAlign mobile">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle browser_mobile sprite16 sprite16-pin_red' alt = "Use theme by default for this browser" title = "Use theme by default for this browser" onclick = "setBrowser(this, '8', 'mobile')"/>
+           </td>
+       <td class = "centerAlign">
+     <div style = "display:none" id = "theme_settings_blue"></div>
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-search' title = "Preview" alt = "Preview" onclick = "window.open('index.php?preview_theme=8', 'preview_theme')" />
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-export' alt = "Export theme" title = "Export theme" onclick = "exportTheme(this, '8')">
+            <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-error_delete' title = "Delete" alt = "Delete" onclick = "if (confirm ('This operation is irreversible! Are you sure?')) deleteEntity(this, '8')" />       </td>
+   </tr>
+     </table>
+  
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+ </div>
+ </div>
+ 
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+                            </td></tr>
+    
+  
+  
+  
+  
+  
+  
+  
+ </table>
+
+    </td>
+    <td class = "layoutColumn right">
+         </td></tr>
+   </table>
+  </td></tr>
+   <tr><td style = "vertical-align:bottom">
+   <table style = "width:100%">
+    <tr><td class = "footer " colspan = "3">   <div><a href = "http://www.efrontlearning.net">eFront</a> (version 3.6.9) &bull; Community Edition &bull; <a href = "index.php?ctg=contact">Contact us</a></div>
+ </td></tr>
+   </table>
+  </td></tr>
+  </table>
+
+<script>
+
+var currentUnit = '';  var g_servername = 'https://app5.com/www/';
+</script>
+<script>var BOOKMARKTRANSLATION = 'Bookmarks';var NODATAFOUND = 'No data found';</script>
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=../modules/module_chat/js/jquery,../modules/module_chat/js/chat,EfrontScripts,scriptaculous/prototype,scriptaculous/scriptaculous,scriptaculous/effects,prototip/prototip,efront_ajax,includes/events"> </script> 
+
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=scriptaculous/dragdrop,includes/themes,includes/entity,scriptaculous/controls"> </script>
+<script type = "text/javascript" src = "modules/module_rss/rss_reader.js"> </script> 
+<div id = "user_table" style = "display:none">
+
+    <div class = "block" style = ";" id = "Information" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'd8a278b436114b10a2797b86686eac2f')"  id = "Information_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table width = "100%">
+        <tr><td align = "left" id = "user_box" style = "padding:3px 3px 4px 5px;"></td></tr>
+    </table>
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<table id = "popup_table" class = "divPopup" style = "display:none;">
+    <tr class = "defaultRowHeight">
+        <td class = "topTitle" id = "popup_title"></td>
+        <td class = "topTitle" id = "popup_close_cell"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-close' alt = "Close" name = "" id = "popup_close" title = "Close" onclick = "if (document.getElementById('reloadHidden') && document.getElementById('reloadHidden').value == '1')  {parent.frames[1].location = parent.frames[1].location};eF_js_showDivPopup('', '', this.name);"/>
+    </td></tr>
+    <tr><td colspan = "2" id = "popup_data" style = ""></td></tr>
+    <tr><td colspan = "2" id = "frame_data" style = "display:none;">
+   <iframe name = "POPUP_FRAME" id = "popup_frame" src = "about:blank" >Sorry, but your browser needs to support iframes to see this</iframe>
+    </td></tr>
+</table>
+<div id = "error_details" style = "display:none">
+    <div class = "block" style = ";" id = "Error+Details" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'c8dd5807a415fbae2fc67e8cf0e7609e')"  id = "Error+Details_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Error Details</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Error+Details_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <pre></pre>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<div id = 'showMessageDiv' style = "display:none"></div>
+<div id="dimmer" class = "dimmerDiv" style = "display:none;"></div>
+<div id = "defaultExceptionHandlerDiv" style = "color:#ffffff;display:none"></div>
+
+ 
+
+
+
+<script type="text/javascript" >
+ var modulechatbaselink = 'https://app5.com/www/modules/module_chat/';
+ var modulechatbasedir = '/var/www/app5.com/public_html/www/modules/module_chat/';
+ var modulechatbaseurl = 'administrator.php?ctg=module&op=module_chat';
+ var ie = 0;
+</script>
+
+<link href="https://app5.com/www/modules/module_chat/css/screen.css" rel="stylesheet" type="text/css">
+<link href="https://app5.com/www/modules/module_chat/css/chat.css" rel="stylesheet" type="text/css">
+<!--[if IE ]>
+<link type="text/css" rel="stylesheet" media="all" href="https://app5.com/www/modules/module_chat/css/screen_ie.css" />
+<![endif]-->
+
+
+
+<div id="chat_module">
+ <div id="windowspace">
+  <div id="windows"></div>
+ </div>
+ <div id="chat_bar" onclick="javascript:toggle_users()">
+
+  <div id="user_list" >
+   <div id="content" >
+    <!-- Online Users displayed here -->
+   </div>
+  </div>
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+  <td id="first" >
+   <span id="status" >
+
+   </span>
+  </td>
+  <td align="right">
+  <a href="javascript:void(0)" onClick="javascript:on_off()"><img id="statusimg" src="https://app5.com/www/modules/module_chat/img/onoff18.png"/></a>
+
+  </td>
+  </tr>
+  </table>
+ </div>
+</div>
+
+
+<!--[if IE]>
+<bgsound id="sound">
+<script>var ie=1;</script>
+<![endif]-->
+<script type="text/javascript">
+ disableSelection(document.getElementById("chat_bar"))
+</script>
+
+
+
+<script>
+
+
+if (parent.frames[0].document.getElementById('dimmer'))
+ parent.frames[0].document.getElementById('dimmer').style.display = 'none'
+
+if (top.sideframe && top.sideframe.document && top.sideframe.document.getElementById('loading_sidebar'))
+    top.sideframe.document.getElementById('loading_sidebar').style.display = 'none'; //no prototype here please
+
+    var __shouldTriggerNextNotifications = false;
+
+
+
+
+
+
+
+if (!usingHorizontalInterface) {
+ if (top.sideframe && top.sideframe.document.getElementById('current_location')) {
+  top.sideframe.document.getElementById('current_location').value = top.mainframe.location.toString();
+ }
+} else {
+ if ($('current_location')) {
+  $('current_location').value = document.location.toString();
+ }
+}
+
+
+
+ translations['_COUPON'] = 'Coupon';
+ translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';
+      redirectLocation ='/www/administrator.php?ctg=lessons&catalog=1&checkout=1';
+   
+</script></body>
+</html><script language="JavaScript" type="text/javascript">
+            var sorted_translations = new Array();
+            sorted_translations["loadingdata"] = "Loading...";
+            sorted_translations["operationaffectmany"] = "This operation will affect irreversibly a large number of entities. Proceed?";
+            sorted_translations["filter"] = "Filter";
+            sorted_translations["rowsperpage"] = "Rows";
+            sorted_translations["displayingresults"] = "Results";
+            sorted_translations["outof"] = "out of";
+            sorted_translations["_SHOWINGONLYACTIVEENTITIES"] = "Showing only active entities";
+            sorted_translations["_SHOWINGONLYINACTIVEENTITIES"] = "Showing only inactive entities";
+            sorted_translations["_SHOWINGALLENTITIES"] = "Showing both active and inactive entities";
+            </script><script>if (__shouldTriggerNextNotifications) { new Ajax.Request("send_notifications.php?ajax=1", {method:'get', asynchronous:true}); } </script><script type = "text/javascript" src = "js/scripts.php?build=10653&load=tabber,ajax_sorted_table/ajax_sorted_table"> </script>

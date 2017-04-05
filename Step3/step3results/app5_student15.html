@@ -1,0 +1,509 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html    >
+<head>
+    <base href = "https://app5.com/www/">
+    <meta http-equiv = "Content-Language" content = "en">
+    <meta http-equiv = "keywords" content = "education">
+    <meta http-equiv = "description" content = "Collaborative Elearning Platform">
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+    <link rel="shortcut icon" href="themes/default/images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href = "themes/modern/css/css_global.css?build=10653">
+        <link rel = "stylesheet" type = "text/css" href = "modules/module_chat/css/screen.css?build=10653" />         <title>eFront | Refreshing eLearning</title>
+
+    
+    <script type = "text/javascript">
+        var ajaxObjects = new Array();
+                  top.document.title = "eFront | Refreshing eLearning";
+        if (window.name == 'POPUP_FRAME') var popup=1;
+        var globalImageExtension = 'png';
+                var usingHorizontalInterface = true;
+        
+        var sessionLogin = "student";
+        var translationsToJS = new Array();
+    </script>
+
+
+<script>var translations = new Array(); /*used for passing language tags to js*/</script>
+
+</head>
+<body id = "body_personal" onkeypress = "if (window.eF_js_keypress) eF_js_keypress(event);" onbeforeunload = "if (window.getPeriodicData) getPeriodicData();">
+   
+<div id = "bookmarks_div_code" style = "display:none">
+    <div class = "block" style = ";" id = "Show+bookmarks" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '6c59f16fee21390ddba7b8844922df79')"  id = "Show+bookmarks_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Show bookmarks</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Show+bookmarks_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <div id = "bookmarks_div"></div>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<script>
+function changeItemColor(item, color) {
+//alert(document.getElementById(item).style.backgroundColor + ' ' +color);
+   document.getElementById(item).style.backgroundColor = color;
+}
+</script>
+ <table class = "pageLayout centerFull" id = "pageLayout">
+  <tr><td style = "vertical-align:top">
+   <table style = "width:100%;">
+       <tr><td id ="horizontalBarRow" class = "header" colspan = "3"> <div id = "logo">
+  <a href = "/www/student.php">
+   <img  class = 'handle' src = "themes/modern/images/logo/logo.png" title = "eFront" alt = "eFront" />
+  </a>
+ </div>
+  <script>
+  var startUpdater = true;
+  var updaterPeriod = '100000';
+ </script>
+ <div id = "logout_link" >
+         <span class = "headerText" >
+    Connected:&nbsp;(<a href = "javascript:void(0)" class = "info"><span id = "header_connected_users">1</span><span class = "tooltipSpan">Student D. (student)</span></a>)
+    </span>
+          <a href = "userpage.php?ctg=personal&user=student" class="headerText" id = "personal_options_link">
+     Student D. (student)
+    </a>
+    <div style = "display:none" id = "my_personal_options">
+     <ul style = "list-style:none;padding:0px;" class = "headerMenu">
+           <li onclick = "location='/www/student.php?ctg=personal&user=student&op=dashboard'">Dashboard</li>
+           <li onclick = "location='/www/student.php?ctg=personal&user=student&op=profile'">Account</li>
+           <li onclick = "location='/www/student.php?ctg=personal&user=student&op=user_courses'">Learning</li>
+     
+
+
+
+     </ul>
+    </div>
+       <span class = "headerText">
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-mail' alt = " Messages" title = " Messages" onclick = "location='userpage.php?ctg=messages'"/>
+     <span id = "header_total_messages"></span>
+    </span>
+          <span class = "headerText"></span>
+    <select class = "inputSelectMed" onchange = "if (this.value) changeAccount(this.value)" >
+     <option value="">[Switch account]</option>
+          <option value="admin">Administrator S. (admin)</option>
+                      <option value="professor">Professor D. (professor)</option>
+                              </select>
+                  <a class = "headerText" href = "index.php?logout=true">Logout</a>
+     </div>
+   <div id = "path">
+  <div id = "path_title"><a class = "titleLink" title = "Home" href ="/www/student.php?ctg=control_panel">Home</a>&nbsp;&raquo;&nbsp;<a class = 'titleLink' href = '/www/student.php?ctg=users'>Users</a>&nbsp;&raquo;&nbsp;<a class = 'titleLink' href = '/www/student.php?ctg=personal&user='></a>&nbsp;&raquo;&nbsp;<a class = 'titleLink' href ='/www/student.php?ctg=personal&user=" onmouseover="alert("cs5331_g7")&op=dashboard'>Dashboard</a></div>
+  <div id = "tab_handles_div"></div>
+  <div id = "path_language">
+              <form action = "/www/student.php?ctg=lessons&op=search" method = "post">
+    <input type = "text" name = "search_text" value = "Search" onclick="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';" class = "searchBox" style = "background-image:url('themes/default/images/16x16/search.png');"/>
+    <input type = "hidden" name = "current_location" id = "current_location" />
+   </form>
+    </div>
+ </div></td></tr>
+      <tr><td class = "layoutColumn left">
+         </td>
+    <td class = "layoutColumn center">
+     
+        <div class = "block" id = "messageBlock">
+        <div class = "blockContents messageContents">
+         <table class = "messageBlock">
+             <tr><td><img src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-warning' alt = "_FAILURE" title = "_FAILURE"></td>
+              <td class = "failureBlock">Invalid login name: " onmouseover="alert("cs5331_g7") (403) &nbsp;<a href = "javascript:void(0)" onclick = "eF_js_showDivPopup('Error Details', 2, 'error_details')">More info</a></td>
+              <td><img src = 'themes/default/images/others/transparent.gif' class = 'sprite32 sprite32-close' alt = "Close" title = "Close" onclick = "window.Effect ? new Effect.Fade($('messageBlock')) : document.getElementById('messageBlock').style.display = 'none';"></td></tr>
+            </table>
+        </div>
+        </div><table class = "centerTable"><tr><td class = "moduleCell"> 
+    <div class = "block" style = ";" id = "Personal+info" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '1f342d79a61c7a0ae9306e42e9977186')"  id = "Personal+info_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Personal info</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Personal+info_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+        
+  
+<script>translations['clicktochange'] = 'Click to change status';</script>
+                                           
+       
+                                                                                                         
+       
+                      
+            <table style = "width:100%">
+     <tr><td class = "moduleCell">
+                        <div id="sortableList">
+                            <div style="float: right; width:49%;height: 100%;">
+                                <ul class="sortable" id="secondlist" style="height:100%;width:100%;">
+ 
+                      <li id="secondlist_moduleCalendar">
+                         <table class = "singleColumnData">
+                                                                <tr><td class = "moduleCell">
+                                                                                      
+                                          
+    <div class = "block" style = ";" id = "Calendar%26nbsp%3B%28%23filter%3Atimestamp-%23%29" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '86e6897ef0d6446527aaf07be7bdac4c')"  id = "Calendar%26nbsp%3B%28%23filter%3Atimestamp-%23%29_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Calendar&nbsp;()</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Calendar%26nbsp%3B%28%23filter%3Atimestamp-%23%29_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+                                                  
+                                               
+    <table>
+        <tr><td>
+            <table class = "calendarHeader" >
+                <tr class = "calendar">
+                    <td class = "calendarHeader">
+                        <a href = "student.php?ctg=calendar&view_calendar=1488297600">&laquo; </a>
+                        Apr
+                        <a href = "student.php?ctg=calendar&view_calendar=1493568000">&raquo; </a>
+                    </td>
+                    <td class = "calendarHeader" style = "text-align:right">
+                        <a href = "student.php?ctg=calendar&view_calendar=1459440000">&laquo; </a>
+                        2017
+                        <a href = "student.php?ctg=calendar&view_calendar=1522512000"> &raquo;</a>
+                    </td></tr>
+            </table>
+        </td></tr>
+        <tr><td>
+            <table class = "calendar">
+                <tr><td class = "calendar">&nbsp;M&nbsp;</td>
+                    <td class = "calendar">&nbsp;T&nbsp;</td>
+                    <td class = "calendar">&nbsp;W&nbsp;</td>
+                    <td class = "calendar">&nbsp;T&nbsp;</td>
+                    <td class = "calendar">&nbsp;F&nbsp;</td>
+                    <td class = "calendar">&nbsp;S&nbsp;</td>
+                    <td class = "calendar">&nbsp;S&nbsp;</td>
+                </tr><tr>
+            <tr>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1490889600"></a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1490889600"></a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1490889600"></a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1490889600"></a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1490889600"></a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1490976000">1</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491062400">2</a></td>
+            </tr>
+            <tr>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491148800">3</a></td>
+                <td class = "calendar todayCalendar viewCalendar">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491235200">4</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491321600">5</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491408000">6</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491494400">7</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491580800">8</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491667200">9</a></td>
+            </tr>
+            <tr>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491753600">10</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491840000">11</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1491926400">12</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492012800">13</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492099200">14</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492185600">15</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492272000">16</a></td>
+            </tr>
+            <tr>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492358400">17</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492444800">18</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492531200">19</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492617600">20</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492704000">21</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492790400">22</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492876800">23</a></td>
+            </tr>
+            <tr>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1492963200">24</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1493049600">25</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1493136000">26</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1493222400">27</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1493308800">28</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1493395200">29</a></td>
+                <td class = "calendar ">
+                    <a href = "student.php?ctg=calendar&view_calendar=1493481600">30</a></td>
+            </tr>
+                </table>
+        </td></tr>
+    </table>
+
+                                           
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+
+                                   </td></tr>
+                                
+                         </table>
+                     </li>
+                                         <li id = "second_empty" style = "display:none;"></li>
+                                </ul>
+                            </div>
+
+                                                        <div style="width:50%; height:100%;margin-left:1px;">
+                                <ul class="sortable" id="firstlist" style="height:100%;width:100%;">
+    
+                         <li id="secondlist_moduleMessagesList">
+                         <table class = "singleColumnData">
+                                                                   <tr><td class = "moduleCell">
+                                                                                            
+    <div class = "block" style = ";" id = "Recent+incoming+messages" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '31c4e7ded2ed94ed8d2cf2e5aa946422')"  id = "Recent+incoming+messages_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Recent incoming messages</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Recent+incoming+messages_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <!--ajax:messagesTable-->
+                                            <table class = "sortedTable" width = "100%" height="40px" noFooter="true" size = "" sortBy = "0" useAjax = "1" id = "messagesTable" rowsPerPage="20" limit="100" url="/www/student.php?ctg=messages&folder=&p_message=&minimal_view=1&" style="white-space:nowrap;">
+                                                <tr class = "defaultRowHeight">
+                                                 <td class = "topTitle" name="priority" style = "width:7%;text-align:center;">Flag</td>
+                                                    <td class = "topTitle" name="viewed" style = "width:7%;text-align:center;">Status</td>
+                                                    <td class = "topTitle" name="title" >Subject</td>
+                                                    <td class = "topTitle" name="sender" style="width:11%">From</td>
+                                                    <td class = "topTitle" name="timestamp" style = "width:13%">Date</td>
+                                                    <td class = "topTitle centerAlign noSort" style="width:10%">Operations</td>
+                                                 </tr>
+                                            </table>
+<!--/ajax:messagesTable-->
+
+                                          
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+                                                    </td></tr>
+                                
+                      </table>
+                     </li>
+ 
+   
+         <li id = "first_empty" style = "display:none;"></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+    </td></tr></table>
+                    
+<script>
+// Translations
+var noMessageInFolderConst = "No messages in this folder";
+var phpSelf = "/www/student.php";
+var currentOperation ='dashboard';
+</script> 
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</td></tr></table>
+    </td>
+    <td class = "layoutColumn right">
+         </td></tr>
+   </table>
+  </td></tr>
+   <tr><td style = "vertical-align:bottom">
+   <table style = "width:100%">
+    <tr><td class = "footer " colspan = "3">   <div><a href = "http://www.efrontlearning.net">eFront</a> (version 3.6.9) &bull; Community Edition &bull; <a href = "index.php?ctg=contact">Contact us</a></div>
+ </td></tr>
+   </table>
+  </td></tr>
+  </table>
+
+
+<script>
+
+var currentUnit = '';  var g_servername = 'https://app5.com/www/';
+</script>
+<script>var BOOKMARKTRANSLATION = 'Bookmarks';var NODATAFOUND = 'No data found';</script>
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=../modules/module_chat/js/jquery,../modules/module_chat/js/chat,EfrontScripts,scriptaculous/prototype,scriptaculous/scriptaculous,scriptaculous/effects,prototip/prototip,efront_ajax,includes/events"> </script> 
+
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=includes/personal,scriptaculous/controls"> </script>
+<script type = "text/javascript" src = "modules/module_rss/rss_reader.js"> </script> 
+<div id = "user_table" style = "display:none">
+
+    <div class = "block" style = ";" id = "Information" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'ec235e72cbe062927c3743a2ab5a4e0d')"  id = "Information_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table width = "100%">
+        <tr><td align = "left" id = "user_box" style = "padding:3px 3px 4px 5px;"></td></tr>
+    </table>
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<table id = "popup_table" class = "divPopup" style = "display:none;">
+    <tr class = "defaultRowHeight">
+        <td class = "topTitle" id = "popup_title"></td>
+        <td class = "topTitle" id = "popup_close_cell"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-close' alt = "Close" name = "" id = "popup_close" title = "Close" onclick = "if (document.getElementById('reloadHidden') && document.getElementById('reloadHidden').value == '1')  {parent.frames[1].location = parent.frames[1].location};eF_js_showDivPopup('', '', this.name);"/>
+    </td></tr>
+    <tr><td colspan = "2" id = "popup_data" style = ""></td></tr>
+    <tr><td colspan = "2" id = "frame_data" style = "display:none;">
+   <iframe name = "POPUP_FRAME" id = "popup_frame" src = "about:blank" >Sorry, but your browser needs to support iframes to see this</iframe>
+    </td></tr>
+</table>
+<div id = "error_details" style = "display:none">
+    <div class = "block" style = ";" id = "Error+Details" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'e8789eb13d4a000c7a2dc53000f4984d')"  id = "Error+Details_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Error Details</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Error+Details_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <pre>#0 /var/www/app5.com/public_html/libraries/includes/personal.php(29): EfrontUserFactory::factory('" onmouseover="...')
+#1 /var/www/app5.com/public_html/www/student.php(480): include('/var/www/app5.c...')
+#2 {main}</pre>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<div id = 'showMessageDiv' style = "display:none"></div>
+<div id="dimmer" class = "dimmerDiv" style = "display:none;"></div>
+<div id = "defaultExceptionHandlerDiv" style = "color:#ffffff;display:none"></div>
+
+ 
+
+
+
+<script type="text/javascript" >
+ var modulechatbaselink = 'https://app5.com/www/modules/module_chat/';
+ var modulechatbasedir = '/var/www/app5.com/public_html/www/modules/module_chat/';
+ var modulechatbaseurl = 'student.php?ctg=module&op=module_chat';
+ var ie = 0;
+</script>
+
+<link href="https://app5.com/www/modules/module_chat/css/screen.css" rel="stylesheet" type="text/css">
+<link href="https://app5.com/www/modules/module_chat/css/chat.css" rel="stylesheet" type="text/css">
+<!--[if IE ]>
+<link type="text/css" rel="stylesheet" media="all" href="https://app5.com/www/modules/module_chat/css/screen_ie.css" />
+<![endif]-->
+
+
+
+<div id="chat_module">
+ <div id="windowspace">
+  <div id="windows"></div>
+ </div>
+ <div id="chat_bar" onclick="javascript:toggle_users()">
+
+  <div id="user_list" >
+   <div id="content" >
+    <!-- Online Users displayed here -->
+   </div>
+  </div>
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+  <td id="first" >
+   <span id="status" >
+
+   </span>
+  </td>
+  <td align="right">
+  <a href="javascript:void(0)" onClick="javascript:on_off()"><img id="statusimg" src="https://app5.com/www/modules/module_chat/img/onoff18.png"/></a>
+
+  </td>
+  </tr>
+  </table>
+ </div>
+</div>
+
+
+<!--[if IE]>
+<bgsound id="sound">
+<script>var ie=1;</script>
+<![endif]-->
+<script type="text/javascript">
+ disableSelection(document.getElementById("chat_bar"))
+</script>
+
+
+
+<script>
+
+
+if (parent.frames[0].document.getElementById('dimmer'))
+ parent.frames[0].document.getElementById('dimmer').style.display = 'none'
+
+if (top.sideframe && top.sideframe.document && top.sideframe.document.getElementById('loading_sidebar'))
+    top.sideframe.document.getElementById('loading_sidebar').style.display = 'none'; //no prototype here please
+
+    var __shouldTriggerNextNotifications = false;
+
+
+
+
+
+
+
+if (!usingHorizontalInterface) {
+ if (top.sideframe && top.sideframe.document.getElementById('current_location')) {
+  top.sideframe.document.getElementById('current_location').value = top.mainframe.location.toString();
+ }
+} else {
+ if ($('current_location')) {
+  $('current_location').value = document.location.toString();
+ }
+}
+
+
+
+ translations['_COUPON'] = 'Coupon';
+ translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';
+      redirectLocation ='/www/student.php?ctg=lessons&catalog=1&checkout=1';
+   
+</script><script>
+    var ctg = 'personal';
+</script>
+</body>
+</html><script language="JavaScript" type="text/javascript">
+            var sorted_translations = new Array();
+            sorted_translations["loadingdata"] = "Loading...";
+            sorted_translations["operationaffectmany"] = "This operation will affect irreversibly a large number of entities. Proceed?";
+            sorted_translations["filter"] = "Filter";
+            sorted_translations["rowsperpage"] = "Rows";
+            sorted_translations["displayingresults"] = "Results";
+            sorted_translations["outof"] = "out of";
+            sorted_translations["_SHOWINGONLYACTIVEENTITIES"] = "Showing only active entities";
+            sorted_translations["_SHOWINGONLYINACTIVEENTITIES"] = "Showing only inactive entities";
+            sorted_translations["_SHOWINGALLENTITIES"] = "Showing both active and inactive entities";
+            </script><script>if (__shouldTriggerNextNotifications) { new Ajax.Request("send_notifications.php?ajax=1", {method:'get', asynchronous:true}); } </script><script type = "text/javascript" src = "js/scripts.php?build=10653&load=ajax_sorted_table/ajax_sorted_table,drag-drop-folder-tree"> </script>

@@ -1,0 +1,560 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html    >
+<head>
+    <base href = "https://app5.com/www/">
+    <meta http-equiv = "Content-Language" content = "en">
+    <meta http-equiv = "keywords" content = "education">
+    <meta http-equiv = "description" content = "Collaborative Elearning Platform">
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+    <link rel="shortcut icon" href="themes/default/images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href = "themes/modern/css/css_global.css?build=10653">
+        <link rel = "stylesheet" type = "text/css" href = "modules/module_chat/css/screen.css?build=10653" />         <title>eFront | Refreshing eLearning</title>
+
+    
+    <script type = "text/javascript">
+        var ajaxObjects = new Array();
+                  top.document.title = "eFront | Refreshing eLearning";
+        if (window.name == 'POPUP_FRAME') var popup=1;
+        var globalImageExtension = 'png';
+                var usingHorizontalInterface = true;
+        
+        var sessionLogin = "admin";
+        var translationsToJS = new Array();
+    </script>
+
+
+<script>var translations = new Array(); /*used for passing language tags to js*/</script>
+
+</head>
+<body id = "body_digests" onkeypress = "if (window.eF_js_keypress) eF_js_keypress(event);" onbeforeunload = "if (window.getPeriodicData) getPeriodicData();">
+<script language = "JavaScript" type = "text/javascript">
+
+
+
+
+
+
+</script>
+
+
+ 
+
+
+
+
+                                            
+
+
+
+
+
+ <table class = "pageLayout centerFull" id = "pageLayout">
+  <tr><td style = "vertical-align:top">
+   <table style = "width:100%;">
+       <tr><td id ="horizontalBarRow" class = "header" colspan = "3"> <div id = "logo">
+  <a href = "/www/administrator.php">
+   <img  class = 'handle' src = "themes/modern/images/logo/logo.png" title = "eFront" alt = "eFront" />
+  </a>
+ </div>
+  <script>
+  var startUpdater = true;
+  var updaterPeriod = '100000';
+ </script>
+ <div id = "logout_link" >
+         <span class = "headerText" >
+    Connected:&nbsp;(<a href = "javascript:void(0)" class = "info"><span id = "header_connected_users">2</span><span class = "tooltipSpan">Administrator S. (admin),&nbsp;Student D. (student)</span></a>)
+    </span>
+          <a href = "userpage.php?ctg=personal&user=admin" class="headerText" id = "personal_options_link">
+     Administrator S. (admin)
+    </a>
+    <div style = "display:none" id = "my_personal_options">
+     <ul style = "list-style:none;padding:0px;" class = "headerMenu">
+           <li onclick = "location='/www/administrator.php?ctg=personal&user=admin&op=dashboard'">Dashboard</li>
+           <li onclick = "location='/www/administrator.php?ctg=personal&user=admin&op=profile'">Account</li>
+     
+
+
+
+     </ul>
+    </div>
+       <span class = "headerText">
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-mail' alt = " Messages" title = " Messages" onclick = "location='userpage.php?ctg=messages'"/>
+     <span id = "header_total_messages"></span>
+    </span>
+          <span class = "headerText"></span>
+    <select class = "inputSelectMed" onchange = "if (this.value) changeAccount(this.value)" >
+     <option value="">[Switch account]</option>
+          <option value="professor">Professor D. (professor)</option>
+                      <option value="student">Student D. (student)</option>
+                              </select>
+                  <a class = "headerText" href = "index.php?logout=true">Logout</a>
+     </div>
+   <div id = "path">
+  <div id = "path_title"><a class="titleLink" href ="/www/administrator.php?ctg=control_panel">Home</a>&nbsp;<span>&raquo;&nbsp;</span><a class="titleLink" href ="/www/administrator.php?ctg=digests">Notifications</a>&nbsp;<span>&raquo;&nbsp;</span><a class="titleLink" href ="/www/administrator.php?ctg=digests&edit_notification=1&event=1">Edit notification</a></div>
+  <div id = "tab_handles_div"></div>
+  <div id = "path_language">
+              <form action = "/www/administrator.php?ctg=control_panel&op=search" method = "post">
+    <input type = "text" name = "search_text" value = "Search" onclick="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';" class = "searchBox" style = "background-image:url('themes/default/images/16x16/search.png');"/>
+    <input type = "hidden" name = "current_location" id = "current_location" />
+   </form>
+    </div>
+ </div></td></tr>
+      <tr><td class = "layoutColumn left">
+         </td>
+    <td class = "layoutColumn center">
+         <table class = "centerTable">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+              <tr>
+                <td class = "singleColumn" id = "singleColumn" colspan = "2">
+                    
+<script>
+
+
+
+  var isenterprise = false;
+
+</script>
+
+ <script>
+ var noRecipientsHaveBeenSelected = "No recipients have been selected";
+ var theFieldConst = "The field";
+ var subjectConst = "Subject";
+ var isMandatoryConst = "is mandatory";
+ var basicTemplated = '14';
+ var basicEventRecipients = '3';
+
+ var allLessonEventRecipients = "3";
+ var allLessonUsersConst = "All lesson users";
+ var lessonProf = "5";
+ var lessonProfessorsConst = "Lesson professors";
+ var lessonNotCompleted = "7";
+ var lessonNotCompletedConst = "Users that have not completed the lesson";
+ var expicitlySelected = "4";
+ var expicitlySelectedConst = "Explicitly selected";
+
+ var courseProf = "8";
+ var courseProfessorsConst = "Course professors";
+ var allCourseEventRecipients = "10";
+ var allCourseUsersConst = "All course users";
+
+ var lessonsNameConst = "Lesson name";
+ var courseNameConst = "Course name";
+ var testNameConst = "Test name";
+ var announcementTitleConst = "Announcement title";
+ var announcementBodyConst = "Announcement body";
+ var unitNameConst = "Unit name";
+ var unitContentConst = "Unit content";
+ var surveyNameConst = "Survey name";
+ var surveyIdConst = "Survey id";
+ var surveyMessageConst = "Survey message";
+
+ var branchNameConst = "Branch name";
+ var jobNameConst = "Job position name";
+
+ var timeAfterEvent = "Time to send after event";
+ var timeBeforeEvent = "Time to send before event";
+ var everyConst = "Every";
+ var startingFrom = "Starting from";
+ var onConst = "on";
+
+ var trigUserNameConst = "Triggering user&#039;s name";
+ var trigUserSurnConst = "Triggering user&#039;s surname";
+ var trigUserLogiConst = "Triggering user&#039;s login";
+ var trigUserTypeConst = "Triggering user&#039;s type";
+ var trigUserEmailConst = "Triggering user&#039;s email";
+
+ var addEditNotification = true;
+ </script>
+   
+    <div class = "block" style = ";" id = "Notifications" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '51fd70daba3b0bc9e05344829bc0b317')"  id = "Notifications_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Notifications</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Notifications_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+              
+<script type="text/javascript">
+//<![CDATA[
+function validate_digests_form(frm) {
+  var value = '';
+  var errFlag = new Array();
+  var _qfGroups = {};
+  _qfMsg = '';
+
+  value = frm.elements['header'].value;
+  if (value == '' && !errFlag['header']) {
+    errFlag['header'] = true;
+    _qfMsg = _qfMsg + '\n - The field Subject is mandatory';
+  }
+
+  if (_qfMsg != '') {
+    _qfMsg = 'The following errors occured:' + _qfMsg;
+    _qfMsg = _qfMsg + '\nPlease correct the above errors';
+    alert(_qfMsg);
+    return false;
+  }
+  return true;
+}
+//]]>
+</script>
+         <form  action="administrator.php?ctg=digests&amp;edit_notification=1&amp;event=1" method="post" name="digests_form" id="digests_form" onsubmit="try { var myValidator = validate_digests_form; } catch(e) { return true; } return myValidator(this);">
+             <input name="_qf__digests_form" type="hidden" value="" />
+
+                        <div id="event_recipients_div" style="display:none">
+       <table class="formElements">
+                       <tr><td class = "fixedLabelCell" >Recipients:&nbsp;</td>
+                           <td style="white-space:nowrap;"><select class="inputSelectMed" id="event_recipients" name="event_recipients">
+	<option value="1">User triggering the event</option>
+	<option value="2">All system users</option>
+	<option value="6">System administrator</option>
+</select></td><td id="explicitlySelectedHelp" style="display:none"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-help' alt = "help" title = "help" onclick = "eF_js_showHideDiv(this, 'explicitly_selected_info', event)"><div id = 'explicitly_selected_info' onclick = "eF_js_showHideDiv(this, 'explicitly_selected_info', event)" class = "popUpInfoDiv" style = "padding:1em 1em 1em 1em;width:450px;height:100px;position:absolute;display:none">The recipients are selected by the system interface according to the event.<BR>- New survey published: Recipients are the users participating in the survey.<BR>- Job assignment: The recipients is the supervisor selected by the employee.<BR>- Project expiration: Recipients are the users that have been assigned the project.</div></td></tr>
+                   </table>
+      </div>
+      </fieldset>
+            <fieldset class = "fieldsetSeparator">
+            <legend>Message</legend>
+      <table class="formElements" style = "width:100%">
+       <tr><td class = "labelCell">Subject:&nbsp;</td>
+        <td class = "elementCell"><input class="inputText" id="messageSubject" onfocus="myActiveElement='messageSubject';" name="header" type="text" />                &nbsp;<span class = "formRequired">*</span>
+            </td></tr>
+       <tr><td class = "labelCell">Send email in html format:&nbsp;</td>
+        <td class = "elementCell"><input type="hidden" name="html_message" value="" /><input id="html_message_id" name="html_message" type="checkbox" value="1" /></td></tr>
+       <tr><td></td>
+        <td>
+        <span>
+         <img style="vertical-align:middle" src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-order' title = "Toggle editor/html mode" alt = "Toggle editor/html mode" />&nbsp;
+         <a href = "javascript:toggleEditor('messageBody','simpleEditor');" id = "toggleeditor_link">Toggle editor/html mode</a>
+        </span>
+       </td></tr>
+       <tr>
+        <td class = "labelCell">Body:&nbsp;</td>
+        <td class = "elementCell"><textarea class="digestEditor" id="messageBody" onactivate="myActiveElement='';" style="width:100%;height:200px" name="message"></textarea></td>
+       </tr>
+       <tr>
+        <td class = "labelCell">Add templatized text:&nbsp;</td>
+        <td class = "elementCell">
+         <select id="template_add" class="inputSelectMed" onchange="addTemplatizedText(this)" name="templ_add">
+	<option value="users_name">Recipient&#039;s name</option>
+	<option value="users_surname">Recipient&#039;s surname</option>
+	<option value="users_login">Recipient&#039;s login</option>
+	<option value="user_type">Recipient&#039;s user type</option>
+	<option value="users_email">Recipient&#039;s email</option>
+	<option value="users_comments">Recipient&#039;s comments</option>
+	<option value="users_language">Recipient&#039;s language</option>
+	<option value="date">Event&#039;s date</option>
+	<option value="date_time">Event date and time</option>
+	<option value="timestamp">Event&#039;s timestamp</option>
+	<option value="host_name">System host url (https://app5.com/www)</option>
+	<option value="site_name">Site name</option>
+	<option value="site_motto">Site motto</option>
+	<option value="md5(Inside the bracktes write the text or add the template to be encoded)">MD5 encoding</option>
+</select>
+         <img onClick = "addTemplatizedText($('template_add'))" src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-add' alt = "Add text template" title = "Add text template">
+        </td>
+       </tr>
+              <tr>
+        <td class = "labelCell">Language:&nbsp;</td>
+        <td class = "elementCell">
+         <select class="inputSelectMed" onchange="addLanguageTag(this)" name="languages_NAME">
+	<option value="brazilian">Brasileira</option>
+	<option value="catalan">CatalÃ </option>
+	<option value="czech">Äesky</option>
+	<option value="danish">Dansk</option>
+	<option value="german">Deutsch</option>
+	<option value="english" selected="selected">English</option>
+	<option value="spanish">EspaÃ±ol</option>
+	<option value="greek">EÎ»Î»Î·Î½Î¹ÎºÎ¬</option>
+	<option value="filipino">Filipino</option>
+	<option value="french">FranÃ§ais</option>
+	<option value="galician">Galego</option>
+	<option value="croatian">Hrvatski</option>
+	<option value="indonesian">Indonesia</option>
+	<option value="italian">Italiano</option>
+	<option value="latin_american">LatinoamÃ©rica</option>
+	<option value="latvian">LatvieÅ¡u</option>
+	<option value="lithuanian">LietuviÅ¡kai</option>
+	<option value="hungarian">Magyar</option>
+	<option value="dutch">Nederlands</option>
+	<option value="norwegian">Norsk</option>
+	<option value="polish">Polski</option>
+	<option value="portuguese">PortuguÃªs</option>
+	<option value="russian">PÑÑÑÐºÐ¸Ð¹</option>
+	<option value="romanian">RomÃ¢nÄ</option>
+	<option value="albanian">Shqipe</option>
+	<option value="slovak">SlovenÄina</option>
+	<option value="slovenian">Slovenski</option>
+	<option value="finnish">Suomi</option>
+	<option value="swedish">Svenska</option>
+	<option value="turkish">TÃ¼rkÃ§e</option>
+	<option value="vietnamese">Viá»t</option>
+	<option value="bulgarian">ÐÑÐ»Ð³Ð°ÑÑÐºÐ¸</option>
+	<option value="serbian">Ð¡ÑÐ¿ÑÐºÐ¸</option>
+	<option value="ukrainian">Ð£ÐºÑÐ°ÑÐ½ÑÑÐºÐµ</option>
+	<option value="hebrew">×¢××¨××ª</option>
+	<option value="arabic">Ø§ÙØ¹Ø±Ø¨ÙØ©</option>
+	<option value="persian">ÙØ§Ø±Ø³Û</option>
+	<option value="hindi">à¤¹à¤¿à¤¨à¥à¤¦à¥</option>
+	<option value="thai">à¹à¸à¸¢</option>
+	<option value="georgian">á¥áá áá£áá</option>
+	<option value="chinese_simplified">ä¸­å½ç®å</option>
+	<option value="chinese_traditional">ä¸­åå³çµ±</option>
+	<option value="japanese">æ¥æ¬èª</option>
+	<option value="korean">íêµ­ì´</option>
+</select>
+         <a href= "" class = "info"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-help' alt = "Help" title = "Help" onclick = "eF_js_showHideDiv(this, 'language_set_info', event)" ><span class = "tooltipSpan">Setting language tags allows you to send notifications in different languages according to every user&#039;s language. The message below each language tag will be sent to all users who use that language. In the case where a user&#039;s language is not defined or no tags are used, then the default message (the first one on the top that has no tag) is used</div></a>
+        </td>
+       </tr>
+              <tr><td></td>
+        <td class = "submitCell"><input class="flatButton" name="submit_digest" value="Submit" type="submit" /></td></tr>
+      </table>
+      </fieldset>
+  </form>
+  
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+     <script language = "JavaScript" type = "text/javascript">
+  var eventForm = "";
+  var eventCategory = "";
+  var recipientsCategory = "active_users";
+     </script>
+                </td>
+            </tr>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+ </table>
+
+    </td>
+    <td class = "layoutColumn right">
+         </td></tr>
+   </table>
+  </td></tr>
+   <tr><td style = "vertical-align:bottom">
+   <table style = "width:100%">
+    <tr><td class = "footer " colspan = "3">   <div><a href = "http://www.efrontlearning.net">eFront</a> (version 3.6.9) &bull; Community Edition &bull; <a href = "index.php?ctg=contact">Contact us</a></div>
+ </td></tr>
+   </table>
+  </td></tr>
+  </table>
+
+<script>
+
+var currentUnit = '';  var g_servername = 'https://app5.com/www/';
+</script>
+<script>var BOOKMARKTRANSLATION = 'Bookmarks';var NODATAFOUND = 'No data found';</script>
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=../modules/module_chat/js/jquery,../modules/module_chat/js/chat,EfrontScripts,scriptaculous/prototype,scriptaculous/scriptaculous,scriptaculous/effects,prototip/prototip,efront_ajax,includes/events"> </script> 
+    <script type = "text/javascript" src = "editor/tiny_mce_new/tiny_mce_gzip.js"></script>
+     
+
+        <script type = "text/javascript">
+        <!--
+            tinyMCE_GZ.init({
+                mode : "specific_textareas",
+                editor_selector : "mceEditor,templateEditor,simpleEditor,digestEditor",
+                plugins : 'Jsvk,java,asciimath,asciisvg,table,style,save,advhr,advimage,advlink,emotions,iespell,preview,zoom,searchreplace,print,contextmenu,media,paste,directionality,fullscreen,index_link',
+                themes : 'simple,advanced',
+                languages : 'en', //theoritically, here must be all suported languages but tinymce reads only the last one (possibly a bug). So we load only the session language(makriria 2207/07/30)
+                disk_cache : true, // it was false... check lang issue
+                debug : false,
+                events : "onClick",
+                handle_event_callback : "myHandleEvent"
+        });
+        // -->
+
+        </script>
+ 
+ <script type="text/javascript" src="editor/tiny_mce_new/plugins/asciimath/js/ASCIIMathMLwFallback.js"></script>
+ <script type="text/javascript" src="editor/tiny_mce_new/plugins/asciisvg/js/ASCIIsvgPI.js"></script>
+ 
+ <script type="text/javascript">
+  var AScgiloc = 'editor/tiny_mce_new/php/svgimg.php';
+  var AMTcgiloc = 'http://www.imathas.com/cgi-bin/mimetex.cgi';
+ </script>
+ 
+ <script type = "text/javascript" src = "editor/tiny_mce_new/efront_init_tiny_mce.php"></script> 
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=includes/digests,scriptaculous/controls"> </script>
+<script type = "text/javascript" src = "modules/module_rss/rss_reader.js"> </script> 
+<div id = "user_table" style = "display:none">
+
+    <div class = "block" style = ";" id = "Information" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'd8a278b436114b10a2797b86686eac2f')"  id = "Information_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table width = "100%">
+        <tr><td align = "left" id = "user_box" style = "padding:3px 3px 4px 5px;"></td></tr>
+    </table>
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<table id = "popup_table" class = "divPopup" style = "display:none;">
+    <tr class = "defaultRowHeight">
+        <td class = "topTitle" id = "popup_title"></td>
+        <td class = "topTitle" id = "popup_close_cell"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-close' alt = "Close" name = "" id = "popup_close" title = "Close" onclick = "if (document.getElementById('reloadHidden') && document.getElementById('reloadHidden').value == '1')  {parent.frames[1].location = parent.frames[1].location};eF_js_showDivPopup('', '', this.name);"/>
+    </td></tr>
+    <tr><td colspan = "2" id = "popup_data" style = ""></td></tr>
+    <tr><td colspan = "2" id = "frame_data" style = "display:none;">
+   <iframe name = "POPUP_FRAME" id = "popup_frame" src = "about:blank" >Sorry, but your browser needs to support iframes to see this</iframe>
+    </td></tr>
+</table>
+<div id = "error_details" style = "display:none">
+    <div class = "block" style = ";" id = "Error+Details" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'c8dd5807a415fbae2fc67e8cf0e7609e')"  id = "Error+Details_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Error Details</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Error+Details_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <pre></pre>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<div id = 'showMessageDiv' style = "display:none"></div>
+<div id="dimmer" class = "dimmerDiv" style = "display:none;"></div>
+<div id = "defaultExceptionHandlerDiv" style = "color:#ffffff;display:none"></div>
+
+ 
+
+
+
+<script type="text/javascript" >
+ var modulechatbaselink = 'https://app5.com/www/modules/module_chat/';
+ var modulechatbasedir = '/var/www/app5.com/public_html/www/modules/module_chat/';
+ var modulechatbaseurl = 'administrator.php?ctg=module&op=module_chat';
+ var ie = 0;
+</script>
+
+<link href="https://app5.com/www/modules/module_chat/css/screen.css" rel="stylesheet" type="text/css">
+<link href="https://app5.com/www/modules/module_chat/css/chat.css" rel="stylesheet" type="text/css">
+<!--[if IE ]>
+<link type="text/css" rel="stylesheet" media="all" href="https://app5.com/www/modules/module_chat/css/screen_ie.css" />
+<![endif]-->
+
+
+
+<div id="chat_module">
+ <div id="windowspace">
+  <div id="windows"></div>
+ </div>
+ <div id="chat_bar" onclick="javascript:toggle_users()">
+
+  <div id="user_list" >
+   <div id="content" >
+    <!-- Online Users displayed here -->
+   </div>
+  </div>
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+  <td id="first" >
+   <span id="status" >
+
+   </span>
+  </td>
+  <td align="right">
+  <a href="javascript:void(0)" onClick="javascript:on_off()"><img id="statusimg" src="https://app5.com/www/modules/module_chat/img/onoff18.png"/></a>
+
+  </td>
+  </tr>
+  </table>
+ </div>
+</div>
+
+
+<!--[if IE]>
+<bgsound id="sound">
+<script>var ie=1;</script>
+<![endif]-->
+<script type="text/javascript">
+ disableSelection(document.getElementById("chat_bar"))
+</script>
+
+
+
+<script>
+
+
+if (parent.frames[0].document.getElementById('dimmer'))
+ parent.frames[0].document.getElementById('dimmer').style.display = 'none'
+
+if (top.sideframe && top.sideframe.document && top.sideframe.document.getElementById('loading_sidebar'))
+    top.sideframe.document.getElementById('loading_sidebar').style.display = 'none'; //no prototype here please
+
+    var __shouldTriggerNextNotifications = false;
+
+
+
+
+
+
+
+if (!usingHorizontalInterface) {
+ if (top.sideframe && top.sideframe.document.getElementById('current_location')) {
+  top.sideframe.document.getElementById('current_location').value = top.mainframe.location.toString();
+ }
+} else {
+ if ($('current_location')) {
+  $('current_location').value = document.location.toString();
+ }
+}
+
+
+
+ translations['_COUPON'] = 'Coupon';
+ translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';
+      redirectLocation ='/www/administrator.php?ctg=lessons&catalog=1&checkout=1';
+   
+</script></body>
+</html><script>if (__shouldTriggerNextNotifications) { new Ajax.Request("send_notifications.php?ajax=1", {method:'get', asynchronous:true}); } </script>

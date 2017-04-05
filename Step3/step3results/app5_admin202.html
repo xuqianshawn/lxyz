@@ -1,0 +1,607 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html    >
+<head>
+    <base href = "https://app5.com/www/">
+    <meta http-equiv = "Content-Language" content = "en">
+    <meta http-equiv = "keywords" content = "education">
+    <meta http-equiv = "description" content = "Collaborative Elearning Platform">
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+    <link rel="shortcut icon" href="themes/default/images/favicon.png">
+    <link rel = "stylesheet" type = "text/css" href = "themes/modern/css/css_global.css?build=10653">
+        <link rel = "stylesheet" type = "text/css" href = "modules/module_chat/css/screen.css?build=10653" />         <title>eFront | Refreshing eLearning</title>
+
+    
+    <script type = "text/javascript">
+        var ajaxObjects = new Array();
+                  top.document.title = "eFront | Refreshing eLearning";
+        if (window.name == 'POPUP_FRAME') var popup=1;
+        var globalImageExtension = 'png';
+                var usingHorizontalInterface = true;
+        
+        var sessionLogin = "admin";
+        var translationsToJS = new Array();
+    </script>
+
+
+<script>var translations = new Array(); /*used for passing language tags to js*/</script>
+
+</head>
+<body id = "body_digests" onkeypress = "if (window.eF_js_keypress) eF_js_keypress(event);" onbeforeunload = "if (window.getPeriodicData) getPeriodicData();">
+<script language = "JavaScript" type = "text/javascript">
+
+
+
+
+
+
+</script>
+
+
+ 
+
+
+
+
+            
+
+
+
+
+
+ <table class = "pageLayout centerFull" id = "pageLayout">
+  <tr><td style = "vertical-align:top">
+   <table style = "width:100%;">
+       <tr><td id ="horizontalBarRow" class = "header" colspan = "3"> <div id = "logo">
+  <a href = "/www/administrator.php">
+   <img  class = 'handle' src = "themes/modern/images/logo/logo.png" title = "eFront" alt = "eFront" />
+  </a>
+ </div>
+  <script>
+  var startUpdater = true;
+  var updaterPeriod = '100000';
+ </script>
+ <div id = "logout_link" >
+         <span class = "headerText" >
+    Connected:&nbsp;(<a href = "javascript:void(0)" class = "info"><span id = "header_connected_users">2</span><span class = "tooltipSpan">Administrator S. (admin),&nbsp;Student D. (student)</span></a>)
+    </span>
+          <a href = "userpage.php?ctg=personal&user=admin" class="headerText" id = "personal_options_link">
+     Administrator S. (admin)
+    </a>
+    <div style = "display:none" id = "my_personal_options">
+     <ul style = "list-style:none;padding:0px;" class = "headerMenu">
+           <li onclick = "location='/www/administrator.php?ctg=personal&user=admin&op=dashboard'">Dashboard</li>
+           <li onclick = "location='/www/administrator.php?ctg=personal&user=admin&op=profile'">Account</li>
+     
+
+
+
+     </ul>
+    </div>
+       <span class = "headerText">
+     <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-mail' alt = " Messages" title = " Messages" onclick = "location='userpage.php?ctg=messages'"/>
+     <span id = "header_total_messages"></span>
+    </span>
+          <span class = "headerText"></span>
+    <select class = "inputSelectMed" onchange = "if (this.value) changeAccount(this.value)" >
+     <option value="">[Switch account]</option>
+          <option value="professor">Professor D. (professor)</option>
+                      <option value="student">Student D. (student)</option>
+                              </select>
+                  <a class = "headerText" href = "index.php?logout=true">Logout</a>
+     </div>
+   <div id = "path">
+  <div id = "path_title"><a class="titleLink" href ="/www/administrator.php?ctg=control_panel">Home</a>&nbsp;<span>&raquo;&nbsp;</span><a class="titleLink" href ="/www/administrator.php?ctg=digests">Notifications</a></div>
+  <div id = "tab_handles_div"></div>
+  <div id = "path_language">
+              <form action = "/www/administrator.php?ctg=control_panel&op=search" method = "post">
+    <input type = "text" name = "search_text" value = "Search" onclick="if(this.value=='Search')this.value='';" onblur="if(this.value=='')this.value='Search';" class = "searchBox" style = "background-image:url('themes/default/images/16x16/search.png');"/>
+    <input type = "hidden" name = "current_location" id = "current_location" />
+   </form>
+    </div>
+ </div></td></tr>
+      <tr><td class = "layoutColumn left">
+         </td>
+    <td class = "layoutColumn center">
+         <table class = "centerTable">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+              <tr>
+                <td class = "singleColumn" id = "singleColumn" colspan = "2">
+                    
+<script>
+
+
+
+  var isenterprise = false;
+
+</script>
+
+    <script language = "JavaScript" type = "text/javascript">
+ var addEditNotification = false;
+    </script>
+      <script language = "JavaScript" type = "text/javascript">
+  var deactivateConst = "Deactivate";
+  var activateConst = "Activate";
+  var recipientsCategory = "";
+  var sessionType = "administrator";
+     </script>
+                                   
+    <div class = "block" style = ";" id = "Notifications" >
+        <div class = "blockContents" >
+          <span class = "handles"><a href = "javascript:void(0);"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-help'  title = "http://docs.efrontlearning.net/index.php/Notifications" onclick = "PopupCenter('http://docs.efrontlearning.net/index.php/Notifications?simple', 'helpwindow', '850', '500')"></a><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '51fd70daba3b0bc9e05344829bc0b317')"  id = "Notifications_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Notifications</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Notifications_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+       <div class="tabber" >
+   <div class = "tabbertab "><h3>Registered</h3>
+    <div class = "block" style = ";" id = "Registered" >
+        <div class = "blockContents" >
+          <span class = "handles"><a  href = "administrator.php?ctg=digests&add_default=1"   ><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-go_into' title = 'Restore default notifications' alt = 'Restore default notifications' /></a><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '50c5fff43850a2113016eaa816dd5a43')"  id = "Registered_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Registered</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Registered_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+                 <table border = "0" width = "100%" class = "sortedTable">
+                <tr class = "topTitle">
+                    <td class = "topTitle">When</td>
+                    <td class = "topTitle">Event</td>
+                    <td class = "topTitle">Event applies to</td>
+                    <td class = "topTitle">Recipients</td>
+                    <td class = "topTitle centerAlign">Status</td>
+                                                            <td class = "topTitle noSort" align="center">Operations</td>
+                                    </tr>
+                                    <tr id = "notification_row_1_1" class = "oddRowColor ">
+                    <td ><span style='display:none'>0.00</span>On event</td>
+                    <td >Password forgotten</td>
+                    <td >All users</td>
+                    <td >User triggering the event</td>
+                    <td class = "centerAlign">
+                     <span id = "notification_status_1_1" style="display:none">
+                      1</span>
+         <a href = "javascript:void(0);" >
+                                          <img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-trafficlight_green' alt = "Deactivate" title = "Deactivate" border = "0">
+                                     </a>
+     </td>
+                                                            <td class = "centerAlign">
+      <a href = "/www/administrator.php?ctg=digests&edit_notification=1&event=1" class = "editLink"><img  src = 'themes/default/images/others/transparent.gif'  class = 'handle sprite16 sprite16-edit' title = "Edit" alt = "Edit" /></a>
+                          </td>
+                     </tr>
+                             <tr id = "notification_row_2_1" class = " evenRowColor ">
+                    <td ><span style='display:none'>0.00</span>On event</td>
+                    <td >New password request</td>
+                    <td >All users</td>
+                    <td >User triggering the event</td>
+                    <td class = "centerAlign">
+                     <span id = "notification_status_2_1" style="display:none">
+                      1</span>
+         <a href = "javascript:void(0);" >
+                                          <img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-trafficlight_green' alt = "Deactivate" title = "Deactivate" border = "0">
+                                     </a>
+     </td>
+                                                            <td class = "centerAlign">
+      <a href = "/www/administrator.php?ctg=digests&edit_notification=2&event=1" class = "editLink"><img  src = 'themes/default/images/others/transparent.gif'  class = 'handle sprite16 sprite16-edit' title = "Edit" alt = "Edit" /></a>
+                          </td>
+                     </tr>
+                             <tr id = "notification_row_3_1" class = "oddRowColor ">
+                    <td ><span style='display:none'>0.00</span>On event</td>
+                    <td >User email activation</td>
+                    <td >All users</td>
+                    <td >User triggering the event</td>
+                    <td class = "centerAlign">
+                     <span id = "notification_status_3_1" style="display:none">
+                      1</span>
+         <a href = "javascript:void(0);" onclick = "activateNotification(this, '3', '1')">
+                                          <img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-trafficlight_green' alt = "Deactivate" title = "Deactivate" border = "0">
+                                     </a>
+     </td>
+                                                            <td class = "centerAlign">
+      <a href = "/www/administrator.php?ctg=digests&edit_notification=3&event=1" class = "editLink"><img  src = 'themes/default/images/others/transparent.gif'  class = 'handle sprite16 sprite16-edit' title = "Edit" alt = "Edit" /></a>
+                               <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-error_delete' title = "Delete" alt = "Delete" onclick = "if(confirm('Are you sure you want to remove this notification?')) deleteNotification(this, '3', '1')"/>
+                                            </td>
+                     </tr>
+                             <tr id = "notification_row_4_1" class = " evenRowColor ">
+                    <td ><span style='display:none'>0.00</span>On event</td>
+                    <td >User registration</td>
+                    <td >All users</td>
+                    <td >User triggering the event</td>
+                    <td class = "centerAlign">
+                     <span id = "notification_status_4_1" style="display:none">
+                      1</span>
+         <a href = "javascript:void(0);" onclick = "activateNotification(this, '4', '1')">
+                                          <img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-trafficlight_green' alt = "Deactivate" title = "Deactivate" border = "0">
+                                     </a>
+     </td>
+                                                            <td class = "centerAlign">
+      <a href = "/www/administrator.php?ctg=digests&edit_notification=4&event=1" class = "editLink"><img  src = 'themes/default/images/others/transparent.gif'  class = 'handle sprite16 sprite16-edit' title = "Edit" alt = "Edit" /></a>
+                               <img  src = 'themes/default/images/others/transparent.gif'  class = 'ajaxHandle sprite16 sprite16-error_delete' title = "Delete" alt = "Delete" onclick = "if(confirm('Are you sure you want to remove this notification?')) deleteNotification(this, '4', '1')"/>
+                                            </td>
+                     </tr>
+                          </table>
+        
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+   <div class = "tabbertab "><h3>Messages queue</h3>
+    <div class = "block" style = ";" id = "Messages+queue" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, '48e127af1d8a7936bb20ab4e21e18751')"  id = "Messages+queue_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Messages queue</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Messages+queue_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+                             <div class = "headerTools">
+             <span>
+              <img src='themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-go_into' title="Send next queue messages" alt="Send next queue messages">
+     <a href="javascript:void(0)" onclick = "sendQueueMessages(this)">Send next queue messages</a>
+             </span>
+             <span>
+              <img src='themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-error_delete' title="Clear queue messages" alt="Clear queue messages">
+     <a href="javascript:void(0)" onclick = "clearQueueMessages(this)">Clear queue messages</a>
+             </span>
+            </div>
+            <!--ajax:msgQueueTable-->
+            <table style = "width:100%" class = "sortedTable" size = "" sortBy = "0" id = "msgQueueTable" useAjax = "1" rowsPerPage = "20" url = "administrator.php?ctg=digests&">
+                <tr class = "topTitle">
+                    <td class = "topTitle" name="timestamp" width = "35%">Date</td>
+                    <td name="recipients" class = "topTitle">Recipients</td>
+                    <td name="subject" class = "topTitle">Subject</td>
+                    <td class = "topTitle noSort centerAling">Operations</td>
+                </tr>
+              <tr class = "defaultRowHeight oddRowColor"><td class = "emptyCategory" colspan = "4">No data found</td></tr>
+               </table>
+<!--/ajax:msgQueueTable-->
+        
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+   <div class = "tabbertab "><h3>Recently sent</h3>
+    <div class = "block" style = ";" id = "Recently+sent" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'd9385b4130df580a216c3b3341d3e8eb')"  id = "Recently+sent_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Recently sent</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Recently+sent_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+                             <div class = "headerTools">
+             <span>
+              <img src='themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-error_delete' title="Clear queue messages" alt="Clear queue messages">
+     <a href="javascript:void(0)" onclick = "clearSentQueueMessages(this)">Clear queue messages</a>
+             </span>
+            </div>
+            <!--ajax:sentQueueTable-->
+            <table style = "width:100%" class = "sortedTable" size = "" sortBy = "0" id = "sentQueueTable" useAjax = "1" rowsPerPage = "20" url = "administrator.php?ctg=digests&">
+                <tr class = "topTitle">
+                    <td class = "topTitle" width = "15%">Date</td>
+                    <td class = "topTitle">Recipient</td>
+                    <td class = "topTitle">Subject</td>
+                    <td class = "topTitle centerAlign noSort">Operations</td>
+                </tr>
+                    <tr class = "defaultRowHeight oddRowColor"><td class = "emptyCategory" colspan = "4">No data found</td></tr>
+               </table>
+<!--/ajax:sentQueueTable-->
+        
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+   <div class = "tabbertab "><h3>Configuration options</h3>
+    <div class = "block" style = ";" id = "Configuration+options" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'e1ede6bb8f23891b857efcf55796bf6f')"  id = "Configuration+options_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Configuration options</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Configuration+options_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+        
+<script type="text/javascript">
+//<![CDATA[
+function validate_configuration_form(frm) {
+  var value = '';
+  var errFlag = new Array();
+  var _qfGroups = {};
+  _qfMsg = '';
+
+  value = frm.elements['notifications_pageloads'].value;
+  var regex = /(^-?\d\d*\.\d*$)|(^-?\d\d*$)|(^-?\.\d\d*$)/;
+  if (value != '' && !regex.test(value) && !errFlag['notifications_pageloads']) {
+    errFlag['notifications_pageloads'] = true;
+    _qfMsg = _qfMsg + '\n - The field \"Average page loads before sending the next set of notifications\" Must be numeric';
+  }
+
+  value = frm.elements['notifications_maximum_inter_time'].value;
+  var regex = /(^-?\d\d*\.\d*$)|(^-?\d\d*$)|(^-?\.\d\d*$)/;
+  if (value != '' && !regex.test(value) && !errFlag['notifications_maximum_inter_time']) {
+    errFlag['notifications_maximum_inter_time'] = true;
+    _qfMsg = _qfMsg + '\n - The field \"Maximum minutes between successive notification sets dispatches\" Must be numeric';
+  }
+
+  value = frm.elements['notifications_messages_per_time'].value;
+  var regex = /(^-?\d\d*\.\d*$)|(^-?\d\d*$)|(^-?\.\d\d*$)/;
+  if (value != '' && !regex.test(value) && !errFlag['notifications_messages_per_time']) {
+    errFlag['notifications_messages_per_time'] = true;
+    _qfMsg = _qfMsg + '\n - The field \"Number of notifications to send in each pass\" Must be numeric';
+  }
+
+  value = frm.elements['notifications_messages_per_time'].value;
+  if (value == '' && !errFlag['notifications_messages_per_time']) {
+    errFlag['notifications_messages_per_time'] = true;
+    _qfMsg = _qfMsg + '\n - The field \"Number of notifications to send in each pass\" is mandatory';
+  }
+
+  value = frm.elements['notifications_max_sent_messages'].value;
+  var regex = /(^-?\d\d*\.\d*$)|(^-?\d\d*$)|(^-?\.\d\d*$)/;
+  if (value != '' && !regex.test(value) && !errFlag['notifications_max_sent_messages']) {
+    errFlag['notifications_max_sent_messages'] = true;
+    _qfMsg = _qfMsg + '\n - The field \"Number of recently sent notifications to store\" Must be numeric';
+  }
+
+  value = frm.elements['notifications_max_sent_messages'].value;
+  if (value == '' && !errFlag['notifications_max_sent_messages']) {
+    errFlag['notifications_max_sent_messages'] = true;
+    _qfMsg = _qfMsg + '\n - The field \"Number of recently sent notifications to store\" is mandatory';
+  }
+
+  if (_qfMsg != '') {
+    _qfMsg = 'The following errors occured:' + _qfMsg;
+    _qfMsg = _qfMsg + '\nPlease correct the above errors';
+    alert(_qfMsg);
+    return false;
+  }
+  return true;
+}
+//]]>
+</script>
+            <form  action="administrator.php?ctg=digests&amp;tab=config_tab" method="post" name="configuration_form" id="configuration_form" onsubmit="try { var myValidator = validate_configuration_form; } catch(e) { return true; } return myValidator(this);">
+                <input name="_qf__configuration_form" type="hidden" value="" />
+
+                <table style = "width:100%">
+                    <tr><td class = "labelCell">Use cron job:&nbsp;</td>
+                        <td class = "elementCell"><table><tr><td><input type="hidden" name="notifications_use_cron" value="" /><input class="inputCheckbox" id="notifications_use_cron" onclick="onUseCron();" name="notifications_use_cron" type="checkbox" value="1" /></td><td align="left"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-help' alt = "help" title = "help" onclick = "eF_js_showHideDiv(this, 'use_cron_info', event)"><div id = 'use_cron_info' onclick = "eF_js_showHideDiv(this, 'use_cron_info', event)" class = "popUpInfoDiv" style = "padding:1em 1em 1em 1em;width:425px;height:175px;position:absolute;display:none"><table width="425px" height="175px" style="white-space: wrap;"><tr><td>You can have notifications being sent by a cron job by executing<br> the send_notifications.php script located in the www/ <br>folder of your installation. However, it is essential that you define <br>the HTTP_HOST variable for the $_SERVER variable. <br>A sample script that could be executed by cron is the following: <br><br>&lt;?php<br>$_SERVER['HTTP_HOST'] = "127.0.0.1";<BR>include "/home/user/eFront/www/send_notifications.php";<BR>?></td></tr></table></div></td></tr></table></td></tr>
+                    <tr><td class = "labelCell">Average page loads before sending the next set of notifications:&nbsp;</td>
+                        <td class = "elementCell"><input class="inputText" id="notificatoins_pageloads" name="notifications_pageloads" type="text" value="10" /></td></tr>
+                                        <tr><td class = "labelCell">Maximum minutes between successive notification sets dispatches:&nbsp;</td>
+                        <td class = "elementCell"><input class="inputText" id="notificatoins_maximum_inter_time" name="notifications_maximum_inter_time" type="text" value="0" /></td></tr>
+                         <tr><td>&nbsp</td></tr>
+                    <tr><td class = "labelCell">Number of notifications to send in each pass:&nbsp;</td>
+                        <td class = "elementCell"><input class="inputText" name="notifications_messages_per_time" type="text" value="5" />                &nbsp;<span class = "formRequired">*</span>
+            </td></tr>
+                                        <tr><td class = "labelCell">Number of recently sent notifications to store:&nbsp;</td>
+                        <td class = "elementCell"><input class="inputText" name="notifications_max_sent_messages" type="text" value="100" />                &nbsp;<span class = "formRequired">*</span>
+            </td></tr>
+                                        <tr><td></td><td class = "submitCell"><input class="flatButton" name="submit_variables" value="Submit" type="submit" /></td></tr>
+                </table>
+            </form>
+       
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+        </div>
+        
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+                 </td>
+            </tr>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+ </table>
+
+    </td>
+    <td class = "layoutColumn right">
+         </td></tr>
+   </table>
+  </td></tr>
+   <tr><td style = "vertical-align:bottom">
+   <table style = "width:100%">
+    <tr><td class = "footer " colspan = "3">   <div><a href = "http://www.efrontlearning.net">eFront</a> (version 3.6.9) &bull; Community Edition &bull; <a href = "index.php?ctg=contact">Contact us</a></div>
+ </td></tr>
+   </table>
+  </td></tr>
+  </table>
+
+<script>
+
+var currentUnit = '';  var g_servername = 'https://app5.com/www/';
+</script>
+<script>var BOOKMARKTRANSLATION = 'Bookmarks';var NODATAFOUND = 'No data found';</script>
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=../modules/module_chat/js/jquery,../modules/module_chat/js/chat,EfrontScripts,scriptaculous/prototype,scriptaculous/scriptaculous,scriptaculous/effects,prototip/prototip,efront_ajax,includes/events"> </script> 
+
+
+<script type = "text/javascript" src = "js/scripts.php?build=10653&load=includes/digests,scriptaculous/controls"> </script>
+<script type = "text/javascript" src = "modules/module_rss/rss_reader.js"> </script> 
+<div id = "user_table" style = "display:none">
+
+    <div class = "block" style = ";" id = "Information" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'd8a278b436114b10a2797b86686eac2f')"  id = "Information_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Information</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Information_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+         <table width = "100%">
+        <tr><td align = "left" id = "user_box" style = "padding:3px 3px 4px 5px;"></td></tr>
+    </table>
+
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div>
+</div>
+
+<table id = "popup_table" class = "divPopup" style = "display:none;">
+    <tr class = "defaultRowHeight">
+        <td class = "topTitle" id = "popup_title"></td>
+        <td class = "topTitle" id = "popup_close_cell"><img src = 'themes/default/images/others/transparent.gif' class = 'sprite16 sprite16-close' alt = "Close" name = "" id = "popup_close" title = "Close" onclick = "if (document.getElementById('reloadHidden') && document.getElementById('reloadHidden').value == '1')  {parent.frames[1].location = parent.frames[1].location};eF_js_showDivPopup('', '', this.name);"/>
+    </td></tr>
+    <tr><td colspan = "2" id = "popup_data" style = ""></td></tr>
+    <tr><td colspan = "2" id = "frame_data" style = "display:none;">
+   <iframe name = "POPUP_FRAME" id = "popup_frame" src = "about:blank" >Sorry, but your browser needs to support iframes to see this</iframe>
+    </td></tr>
+</table>
+<div id = "error_details" style = "display:none">
+    <div class = "block" style = ";" id = "Error+Details" >
+        <div class = "blockContents" >
+          <span class = "handles"><img  src = 'themes/default/images/others/transparent.gif'  class = 'open sprite16 sprite16-navigate_up' alt = "Expand/collapse block" title = "Expand/collapse block" onclick = "toggleBlock(this, 'c8dd5807a415fbae2fc67e8cf0e7609e')"  id = "Error+Details_image"><img  src = 'themes/default/images/others/transparent.gif'  class = 'blockMoveHandle sprite16 sprite16-attachment' alt = "Move block" title = "Move block" onmousedown = "createSortable('firstlist');createSortable('secondlist');if (window.showBorders) showBorders(event)" onmouseup = "if (window.showBorders) hideBorders(event)"></span>
+          <span class = "title">Error Details</span>
+          <span class = "subtitle"></span>
+          
+          <div class = "content" style = ";" id = "Error+Details_content" onmousedown = "if ($('firstlist')) {Sortable.destroy('firstlist');}if ($('secondlist')) {Sortable.destroy('secondlist');}">
+     <pre></pre>
+    </div>
+          <span style = "display:none">&nbsp;</span>
+        </div>
+    </div></div>
+<div id = 'showMessageDiv' style = "display:none"></div>
+<div id="dimmer" class = "dimmerDiv" style = "display:none;"></div>
+<div id = "defaultExceptionHandlerDiv" style = "color:#ffffff;display:none"></div>
+
+ 
+
+
+
+<script type="text/javascript" >
+ var modulechatbaselink = 'https://app5.com/www/modules/module_chat/';
+ var modulechatbasedir = '/var/www/app5.com/public_html/www/modules/module_chat/';
+ var modulechatbaseurl = 'administrator.php?ctg=module&op=module_chat';
+ var ie = 0;
+</script>
+
+<link href="https://app5.com/www/modules/module_chat/css/screen.css" rel="stylesheet" type="text/css">
+<link href="https://app5.com/www/modules/module_chat/css/chat.css" rel="stylesheet" type="text/css">
+<!--[if IE ]>
+<link type="text/css" rel="stylesheet" media="all" href="https://app5.com/www/modules/module_chat/css/screen_ie.css" />
+<![endif]-->
+
+
+
+<div id="chat_module">
+ <div id="windowspace">
+  <div id="windows"></div>
+ </div>
+ <div id="chat_bar" onclick="javascript:toggle_users()">
+
+  <div id="user_list" >
+   <div id="content" >
+    <!-- Online Users displayed here -->
+   </div>
+  </div>
+  <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+  <td id="first" >
+   <span id="status" >
+
+   </span>
+  </td>
+  <td align="right">
+  <a href="javascript:void(0)" onClick="javascript:on_off()"><img id="statusimg" src="https://app5.com/www/modules/module_chat/img/onoff18.png"/></a>
+
+  </td>
+  </tr>
+  </table>
+ </div>
+</div>
+
+
+<!--[if IE]>
+<bgsound id="sound">
+<script>var ie=1;</script>
+<![endif]-->
+<script type="text/javascript">
+ disableSelection(document.getElementById("chat_bar"))
+</script>
+
+
+
+<script>
+
+
+if (parent.frames[0].document.getElementById('dimmer'))
+ parent.frames[0].document.getElementById('dimmer').style.display = 'none'
+
+if (top.sideframe && top.sideframe.document && top.sideframe.document.getElementById('loading_sidebar'))
+    top.sideframe.document.getElementById('loading_sidebar').style.display = 'none'; //no prototype here please
+
+    var __shouldTriggerNextNotifications = false;
+
+
+
+
+
+
+
+if (!usingHorizontalInterface) {
+ if (top.sideframe && top.sideframe.document.getElementById('current_location')) {
+  top.sideframe.document.getElementById('current_location').value = top.mainframe.location.toString();
+ }
+} else {
+ if ($('current_location')) {
+  $('current_location').value = document.location.toString();
+ }
+}
+
+
+
+ translations['_COUPON'] = 'Coupon';
+ translations['_CLICKTOENTERDISCOUNTCOUPON'] = 'Click to enter discount coupon';
+      redirectLocation ='/www/administrator.php?ctg=lessons&catalog=1&checkout=1';
+   
+</script></body>
+</html><script language="JavaScript" type="text/javascript">
+            var sorted_translations = new Array();
+            sorted_translations["loadingdata"] = "Loading...";
+            sorted_translations["operationaffectmany"] = "This operation will affect irreversibly a large number of entities. Proceed?";
+            sorted_translations["filter"] = "Filter";
+            sorted_translations["rowsperpage"] = "Rows";
+            sorted_translations["displayingresults"] = "Results";
+            sorted_translations["outof"] = "out of";
+            sorted_translations["_SHOWINGONLYACTIVEENTITIES"] = "Showing only active entities";
+            sorted_translations["_SHOWINGONLYINACTIVEENTITIES"] = "Showing only inactive entities";
+            sorted_translations["_SHOWINGALLENTITIES"] = "Showing both active and inactive entities";
+            </script><script>if (__shouldTriggerNextNotifications) { new Ajax.Request("send_notifications.php?ajax=1", {method:'get', asynchronous:true}); } </script><script type = "text/javascript" src = "js/scripts.php?build=10653&load=tabber,ajax_sorted_table/ajax_sorted_table"> </script>
