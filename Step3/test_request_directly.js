@@ -49,7 +49,17 @@ run = function (appName, username, password, loginurl) {
           url = url + p + "=" + param[p] + "&";
         }
       }
-      getUrls.push(url);
+      getUrls.push({
+        url: url,
+        type: type
+      });
+    } else if (loginrequired && loginurl && type === 'POST') {
+
+      getUrls.push({
+        url: url,
+        type: type,
+        data: param
+      });
     }
   }
   console.log(loginurl);
@@ -87,14 +97,22 @@ run = function (appName, username, password, loginurl) {
 
       var count = 0;
       var interval = setInterval(function () {
-        // console.log(getUrls[count]);
-        page.open(getUrls[count], function (status) {
-          // console.log("status: " + status);
-          currentUrl = getUrls[count];
-          setTimeout(function () {
-            page.sendEvent('mousemove', 90, 90);
-          }, 100);
-        });
+        var urlInfo = getUrls[count];
+        currentUrl = urlInfo.url;
+        if (urlInfo.type === "POST") {
+          page.open(urlInfo.url, 'post', urlInfo.data, function (status) {
+            setTimeout(function () {
+              page.sendEvent('mousemove', 90, 90);
+            }, 100);
+          });
+        } else if (urlInfo.type === "GET") {
+          page.open(urlInfo.url, function (status) {
+            setTimeout(function () {
+              page.sendEvent('mousemove', 90, 90);
+            }, 100);
+          });
+        }
+
         count++;
         if (count >= getUrls.length) {
           console.log('end.');
