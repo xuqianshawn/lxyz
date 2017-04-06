@@ -2,6 +2,8 @@ var webPage = require('webpage');
 var page = webPage.create();
 var fs = require('fs');
 
+var currentUrl = "";
+
 page.settings.XSSAuditingEnabled = false;
 page.settings.webSecurityEnabled = false;
 
@@ -10,7 +12,7 @@ page.onConsoleMessage = function (msg) {
 };
 page.onAlert = function (msg) {
 
-  console.log('ALERT: ' + msg);
+  console.log('ALERT: ' + msg + ", url: " + currentUrl);
   // phantom.exit();
 };
 
@@ -85,9 +87,10 @@ page.open("https://app5.com/www/index.php", function (status) {
 
     var count = 0;
     var interval = setInterval(function () {
-      console.log(getUrls[count]);
+      // console.log(getUrls[count]);
       page.open(getUrls[count], function (status) {
-        console.log("status: " + status);
+        // console.log("status: " + status);
+        currentUrl = getUrls[count];
         setTimeout(function () {
           page.sendEvent('mousemove', 90, 90);
         }, 100);
