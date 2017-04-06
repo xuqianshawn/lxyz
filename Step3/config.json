@@ -1,0 +1,22 @@
+{
+    "logins": [
+        {
+            "name": "app5_admin",
+            "username": "admin",
+            "password": "admin",
+            "loginurl":"https://app5.com/www/index.php"
+        },
+        {
+            "name": "app5_professor",
+            "username": "professor",
+            "password": "professor",
+            "loginurl":"https://app5.com/www/index.php"
+        },
+        {
+            "name": "app5_student",
+            "username": "student",
+            "password": "student",
+            "loginurl":"https://app5.com/www/index.php"
+        }
+    ]
+}
