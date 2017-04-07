@@ -1,6 +1,7 @@
 var webPage = require('webpage');
 var page = webPage.create();
 var fs = require('fs');
+var system = require('system');
 
 var currentUrl = "";
 
@@ -16,6 +17,10 @@ page.onAlert = function (msg) {
   // phantom.exit();
 };
 
+page.onError = function () {
+  // do nothing?
+}
+
 // page.onLoadStarted = function () {
 //   console.log("load started");
 // };
@@ -23,13 +28,31 @@ page.onAlert = function (msg) {
 // page.onLoadFinished = function () {
 //   console.log("load finished");
 // };
+var getUrls = [];
+var args = system.args;
+var config = fs.read('config.json');
+var configObject = JSON.parse(config);
+var logins = configObject["logins"];
+if (args.length <= 1) {
+  console.log('plesae provide app name');
+  phantom.exit();
+}
+var app = args[1];
+for (var i = 0; i < logins.length; i++) {
+  var login = logins[i];
+  var name = login["name"];
+  if (name === app) {
+    var username = login["username"];
+    var password = login["password"];
+    var loginurl = login["loginurl"];
+    console.log(name + ", " + username + ", " + password + ", " + loginurl);
+    run(name, username, password, loginurl);
+  }
+}
 
-
-run = function (appName, username, password, loginurl) {
-
-  var getUrls = [];
+function run(appName, username, password, loginurl) {
   // var loginurl = "";
-  var step2Result = fs.read('../Step2/step2results/result_' + appName + ".json");
+  var step2Result = fs.read('../Step2/results/result_' + appName + ".json");
   var resultObject = JSON.parse(step2Result);
   for (var i = 0; i < resultObject.length; i++) {
     var object = resultObject[i];
@@ -61,8 +84,25 @@ run = function (appName, username, password, loginurl) {
         data: param
       });
     }
+    else{
+      getUrls.push({
+        url: url,
+        type: type
+      });
+    }
   }
   console.log(loginurl);
+  if (loginurl) {
+    ll(loginurl, function () {
+      attack();
+    });
+  }
+  else {
+    attack();
+  }
+}
+
+function ll(loginurl, callback) {
   page.open(loginurl, function (status) {
     console.log("status: " + status);
     // login
@@ -93,50 +133,39 @@ run = function (appName, username, password, loginurl) {
       }
     });
 
-    setTimeout(function () {
-
-      var count = 0;
-      var interval = setInterval(function () {
-        var urlInfo = getUrls[count];
-        currentUrl = urlInfo.url;
-        if (urlInfo.type === "POST") {
-          page.open(urlInfo.url, 'post', urlInfo.data, function (status) {
-            setTimeout(function () {
-              page.sendEvent('mousemove', 90, 90);
-            }, 100);
-          });
-        } else if (urlInfo.type === "GET") {
-          page.open(urlInfo.url, function (status) {
-            setTimeout(function () {
-              page.sendEvent('mousemove', 90, 90);
-            }, 100);
-          });
-        }
-
-        count++;
-        if (count >= getUrls.length) {
-          console.log('end.');
-          clearInterval(interval);
-          phantom.exit();
-        }
-      }, 1000);
-
-    }, 1000);
+    callback();
 
   });
 }
 
+function attack() {
+  setTimeout(function () {
 
+    var count = 0;
+    var interval = setInterval(function () {
+      var urlInfo = getUrls[count];
+      currentUrl = urlInfo.url;
+      if (urlInfo.type === "POST") {
+        page.open(urlInfo.url, 'post', urlInfo.data, function (status) {
+          setTimeout(function () {
+            page.sendEvent('mousemove', 90, 90);
+          }, 100);
+        });
+      } else if (urlInfo.type === "GET") {
+        page.open(urlInfo.url, function (status) {
+          setTimeout(function () {
+            page.sendEvent('mousemove', 90, 90);
+          }, 100);
+        });
+      }
 
-var config = fs.read('config.json');
-var configObject = JSON.parse(config);
-var logins = configObject["logins"];
-for (var i = 0; i < 1; i++) {
-  var login = logins[i];
-  var name = login["name"];
-  var username = login["username"];
-  var password = login["password"];
-  var loginurl = login["loginurl"];
-  console.log(name + ", " + username + ", " + password + ", " + loginurl);
-  run(name, username, password, loginurl);
+      count++;
+      if (count >= getUrls.length) {
+        console.log('end.');
+        clearInterval(interval);
+        phantom.exit();
+      }
+    }, 1000);
+
+  }, 1000);
 }

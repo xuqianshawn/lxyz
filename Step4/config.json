@@ -1,6 +1,12 @@
 {
     "logins": [
         {
+            "name": "app5",
+            "username":"",
+            "password":"",
+            "loginurl":""
+        },
+        {
             "name": "app5_admin",
             "username": "admin",
             "password": "admin",
