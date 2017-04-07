@@ -1,6 +1,7 @@
 var webPage = require('webpage');
 var page = webPage.create();
 var fs = require('fs');
+var system = require('system');
 
 var currentUrl = "";
 
@@ -29,7 +30,7 @@ run = function (appName, username, password, loginurl) {
 
   var getUrls = [];
   // var loginurl = "";
-  var step2Result = fs.read('../Step2/step2results/result_' + appName + ".json");
+  var step2Result = fs.read('../Step2/results/result_' + appName + ".json");
   var resultObject = JSON.parse(step2Result);
   for (var i = 0; i < resultObject.length; i++) {
     var object = resultObject[i];
@@ -127,16 +128,24 @@ run = function (appName, username, password, loginurl) {
 }
 
 
-
+var args = system.args;
 var config = fs.read('config.json');
 var configObject = JSON.parse(config);
 var logins = configObject["logins"];
-for (var i = 0; i < 1; i++) {
+if (args.length <= 1) {
+  console.log('plesae provide app name');
+  phantom.exit();
+}
+var app = args[1];
+for (var i = 0; i < logins.length; i++) {
   var login = logins[i];
   var name = login["name"];
-  var username = login["username"];
-  var password = login["password"];
-  var loginurl = login["loginurl"];
-  console.log(name + ", " + username + ", " + password + ", " + loginurl);
-  run(name, username, password, loginurl);
+  if (name === app) {
+    var username = login["username"];
+    var password = login["password"];
+    var loginurl = login["loginurl"];
+    console.log(name + ", " + username + ", " + password + ", " + loginurl);
+    run(name, username, password, loginurl);
+  }
+
 }

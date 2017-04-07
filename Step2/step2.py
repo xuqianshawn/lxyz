@@ -9,7 +9,7 @@ import glob
 
 def combine(payload_file_name, url_file_name, user_name, password, step1_folder_name = '../Step1/results/'):
     try:
-        step2_folder_name = './step2results/'
+        step2_folder_name = './results/'
         results = []
         url_data_with_param = []
 
