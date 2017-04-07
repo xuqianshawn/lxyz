@@ -58,10 +58,15 @@ def removeFromLocal(file):
         pass
 
 def AvoidDuplicateEntry():
+    print '_____________________'
     with open("tempitems.json") as my_file:
         urls = json.load(my_file)
         for item in urls:
-            if item not in output_urls:
+            if 'logout' in item["url"]:
+                continue
+            if 'logout' in str(item["param"]):
+                continue
+            elif item not in output_urls:
                 output_urls.append(item)
 apptoRun=sys.argv[1:][0]
 loopThroughAppInConfig(apptoRun)
