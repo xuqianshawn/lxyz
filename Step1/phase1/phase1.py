@@ -19,6 +19,7 @@ def loopThroughAppInConfig(appName):
             currentAppname = config["name"]
             if currentAppname == appName:
              output_file = "../results/" + config["name"] + ".json"
+             globals()['allowedDomain'] =config["domain"]
              removeFromLocal(output_file)
              TestSpider.name=currentAppname
              process.crawl(TestSpider,
@@ -62,6 +63,8 @@ def AvoidDuplicateEntry():
     with open("tempitems.json") as my_file:
         urls = json.load(my_file)
         for item in urls:
+            if globals()['allowedDomain'] not in item["url"]:
+                continue
             if 'logout' in item["url"]:
                 continue
             if 'logout' in str(item["param"]):

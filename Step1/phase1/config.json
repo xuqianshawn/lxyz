@@ -1,5 +1,18 @@
 {
 	"loginurls": [ {
+		"name": "app1",
+		"domain": "app1.com",
+		"start_url": "https://app1.com",
+		"login_page": "https://app1.com/users/login.php",
+		"login_url": "https://app1.com/users/login.php",
+		"ignore_params": ["date"],
+		"username_field": "username",
+		"password_field": "password",
+		"loginpayload": {
+			"username": "",
+			"password": ""
+		}
+	},{
 		"name": "app4",
 		"domain": "app4.com",
 		"start_url": "https://app4.com/index.php",
@@ -24,6 +37,19 @@
 		"loginpayload": {
 			"username": "bryce",
 			"password": "bryce"
+		}
+	},{
+		"name": "app1_admin",
+		"domain": "app1.com",
+		"start_url": "https://app1.com",
+		"login_page": "https://app1.com/admin/index.php?page=login",
+		"login_url": "https://app1.com/admin/index.php?page=login",
+		"ignore_params": ["date"],
+		"username_field": "adminname",
+		"password_field": "password",
+		"loginpayload": {
+			"adminname": "adamd",
+			"password": "adamd"
 		}
 	},{
 		"name": "app4_admin",
@@ -78,6 +104,19 @@
 			"password": "user"
 		}
 	},{
+		"name": "app5",
+		"domain": "app5.com",
+		"start_url": "https://app5.com/www/index.php",
+		"login_page": "https://app5.com/www/index.php",
+		"login_url": "https://app5.com/www/index.php?index_page",
+		"ignore_params": ["view_calendar"],
+		"username_field": "login",
+		"password_field": "password",
+		"loginpayload": {
+			"login": "",
+			"password": ""
+		}
+	},{
 		"name": "app5_admin",
 		"domain": "app5.com",
 		"start_url": "https://app5.com/www/index.php",
@@ -130,6 +169,18 @@
 			"password": "AdminAdmin1!"
 		}
 	},{
+		"name": "app7_admin",
+		"domain": "app7.com",
+		"start_url": "https://app7.com/oc-admin/",
+		"login_page": "https://app7.com/oc-admin/index.php?page=login",
+		"login_url": "https://app7.com/oc-admin/index.php?page=login",
+		"username_field": "user",
+		"password_field": "password",
+		"ignore_params": ["mPage"],
+		"loginpayload": {
+			"user": "admin",
+			"password": "admin"
+		}	},{
 		"name": "app7",
 		"domain": "app7.com",
 		"start_url": "https://app7.com/index.php",
